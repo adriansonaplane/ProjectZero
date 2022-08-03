@@ -34,13 +34,6 @@ public class EmployeeServiceImp implements EmployeeService{
     }
 
     @Override
-    public boolean modifyEmployee(int id) {
-
-        boolean isSuccessful = this.empDAO.modifyEmployee(id);
-        return isSuccessful;
-    }
-
-    @Override
     public Employee getEmployeeById(int id) {
 
         return this.empDAO.getEmployeeById(id);

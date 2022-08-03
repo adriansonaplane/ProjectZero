@@ -17,22 +17,23 @@ public class PostgresEmployeeDAO implements EmployeeDAO{
 
         try {
         Connection conn = ConnectionUtility.createConnection();
-        String sql = "insert into employee values (default, ?, ?)";
+        String sql = "insert into employee values (default, ?, ?, ?)";
         PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-        ps.setString(1, employee.getName());
-        ps.setString(2, employee.getPosition());
+        ps.setString(1, employee.getFirstName());
+        ps.setString(2, employee.getLastName());
+        ps.setString(3, employee.getTitle());
         ps.execute();
-        ResultSet rs = ps.getGeneratedKeys();
-        rs.next();
-        int key = rs.getInt("id");
-        employee.setId(key);
+//        ResultSet rs = ps.getGeneratedKeys();
+//        rs.next();
+//        int key = rs.getInt("id");
+//        employee.setId(key);
 
         return true;
         } catch (SQLException e) {
             e.printStackTrace();
+            return false;
         }
 
-        return false;
     }
 
     @Override
@@ -56,11 +57,12 @@ public class PostgresEmployeeDAO implements EmployeeDAO{
     public boolean updateEmployee(Employee employee) {
 
         try(Connection conn = ConnectionUtility.createConnection()){
-            String sql = "update employee set name = ?, position = ? where id = ?";
+            String sql = "update employee set f_name = ?, l_name = ?, title = ? where id = ?";
             PreparedStatement ps = conn.prepareStatement(sql);
-            ps.setString(1, employee.getName());
-            ps.setString(2, employee.getPosition());
-            ps.setInt(3, employee.getId());
+            ps.setString(1, employee.getFirstName());
+            ps.setString(2, employee.getLastName());
+            ps.setString(3, employee.getTitle());
+            ps.setInt(4,employee.getId());
             ps.executeUpdate();
 
             return true;
@@ -82,8 +84,9 @@ public class PostgresEmployeeDAO implements EmployeeDAO{
             rs.next();
             Employee employee = new Employee();
             employee.setId(rs.getInt("id"));
-            employee.setName(rs.getString("name"));
-            employee.setPosition(rs.getString("position"));
+            employee.setFirstName(rs.getString("f_name"));
+            employee.setLastName(rs.getString("l_name"));
+            employee.setTitle(rs.getString("title"));
 
             return employee;
 
@@ -106,8 +109,9 @@ public class PostgresEmployeeDAO implements EmployeeDAO{
             while(rs.next()){
                 Employee employee = new Employee();
                 employee.setId(rs.getInt("id"));
-                employee.setName(rs.getString("name"));
-                employee.setPosition(rs.getString("position"));
+                employee.setFirstName(rs.getString("f_name"));
+                employee.setLastName(rs.getString("l_name"));
+                employee.setTitle(rs.getString("title"));
                 employeeSet.add(employee);
             }
             return employeeSet;

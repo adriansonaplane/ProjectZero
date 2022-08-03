@@ -2,7 +2,13 @@ package dev.ledesma.services;
 
 import dev.ledesma.dao.ExpenseDAO;
 import dev.ledesma.entities.Expense;
+import dev.ledesma.utils.ConnectionUtility;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.HashSet;
 import java.util.Set;
 
 public class ExpenseServiceImp implements ExpenseService {
@@ -72,16 +78,8 @@ public class ExpenseServiceImp implements ExpenseService {
     }
 
     @Override
-    public boolean deleteAllEmployeeExpenseById(int id) {
-
-        boolean isSuccessful = this.expDAO.deleteAllEmployeeExpenseById(id);
-        return isSuccessful;
+    public Set<Expense> getAllEmployeeExpenseByStatus(int id) {
+        return null;
     }
 
-    @Override
-    public boolean deleteAllExpense() {
-
-        boolean isSuccessful = this.expDAO.deleteAllExpense();
-        return isSuccessful;
-    }
 }

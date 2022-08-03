@@ -9,7 +9,6 @@ public interface EmployeeService {
     boolean createEmployee(Employee employee);
     boolean deleteEmployee(int id);
     boolean updateEmployee(Employee employee);
-    boolean modifyEmployee(int id);
     Employee getEmployeeById(int id);
     Set<Employee> getAllEmployees();
     boolean deleteAllEmpoyees();

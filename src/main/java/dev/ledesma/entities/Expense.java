@@ -1,5 +1,7 @@
 package dev.ledesma.entities;
 
+import java.util.Objects;
+
 public class Expense {
 
     private int id;
@@ -77,5 +79,18 @@ public class Expense {
                 ", status=" + status +
                 ", employeeId=" + employeeId +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Expense expense = (Expense) o;
+        return id == expense.id && amount == expense.amount && date == expense.date && status == expense.status && employeeId == expense.employeeId && Objects.equals(category, expense.category) && Objects.equals(description, expense.description);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, amount, date, category, description, status, employeeId);
     }
 }
