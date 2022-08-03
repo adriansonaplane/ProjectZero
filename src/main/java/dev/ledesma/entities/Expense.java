@@ -8,6 +8,7 @@ public class Expense {
     private String category;
     private String description;
     private int status;
+    private int employeeId;
 
     public int getId() {
         return id;
@@ -57,6 +58,14 @@ public class Expense {
         this.status = status;
     }
 
+    public int getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(int employeeId) {
+        this.employeeId = employeeId;
+    }
+
     @Override
     public String toString() {
         return "Expense{" +
@@ -65,7 +74,8 @@ public class Expense {
                 ", date=" + date +
                 ", category='" + category + '\'' +
                 ", description='" + description + '\'' +
+                ", status=" + status +
+                ", employeeId=" + employeeId +
                 '}';
     }
-
 }

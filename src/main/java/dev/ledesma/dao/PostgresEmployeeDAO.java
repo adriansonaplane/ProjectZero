@@ -17,9 +17,8 @@ public class PostgresEmployeeDAO implements EmployeeDAO{
 
         try {
         Connection conn = ConnectionUtility.createConnection();
-        String sql = "inset into employee values (default, ?, ?)";
-        PreparedStatement ps = null;
-        ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+        String sql = "insert into employee values (default, ?, ?)";
+        PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
         ps.setString(1, employee.getName());
         ps.setString(2, employee.getPosition());
         ps.execute();
@@ -73,16 +72,12 @@ public class PostgresEmployeeDAO implements EmployeeDAO{
     }
 
     @Override
-    public boolean modifyEmployee(int id) {
-        return false;
-    }
-
-    @Override
     public Employee getEmployeeById(int id) {
 
         try(Connection conn = ConnectionUtility.createConnection()){
             String sql = "select * from employee where id = ?";
             PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
             rs.next();
             Employee employee = new Employee();
@@ -125,6 +120,14 @@ public class PostgresEmployeeDAO implements EmployeeDAO{
 
     @Override
     public boolean deleteAllEmpoyees() {
+        try(Connection conn = ConnectionUtility.createConnection()){
+            String sql = "delete from employee";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.execute();
+            return true;
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
         return false;
     }
 }

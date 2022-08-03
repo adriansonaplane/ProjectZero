@@ -3,6 +3,8 @@ package dev.ledesma.app;
 import com.google.gson.Gson;
 import dev.ledesma.dao.EmployeeDAO;
 import dev.ledesma.dao.ExpenseDAO;
+import dev.ledesma.dao.PostgresEmployeeDAO;
+import dev.ledesma.dao.PostgresExpenseDAO;
 import dev.ledesma.handlers.employee.*;
 import dev.ledesma.handlers.expense.*;
 import dev.ledesma.services.EmployeeService;
@@ -13,8 +15,8 @@ import io.javalin.Javalin;
 
 public class App {
 
-    public static EmployeeService employeeService = new EmployeeServiceImp(new EmployeeDAO());
-    public static ExpenseService expenseService = new ExpenseServiceImp(new ExpenseDAO());
+    public static EmployeeService employeeService = new EmployeeServiceImp(new PostgresEmployeeDAO());
+    public static ExpenseService expenseService = new ExpenseServiceImp(new PostgresExpenseDAO());
 
     public static void main(String[] args) {
 
@@ -22,8 +24,9 @@ public class App {
         Gson gson = new Gson();
 
         CreateEmployeeHandler createEmployeeHandler = new CreateEmployeeHandler();
+        DeleteAllEmployeeHandler deleteAllEmployeeHandler = new DeleteAllEmployeeHandler();
         DeleteEmployeeHandler deleteEmployeeHandler = new DeleteEmployeeHandler();
-        ModifyEmployeeHandler modifyEmployeeHandler = new ModifyEmployeeHandler();
+        RetrieveAllEmployeeExpenseHandler retrieveAllEmployeeExpenseHandler = new RetrieveAllEmployeeExpenseHandler();
         RetrieveEmployeeHandler retrieveEmployeeHandler = new RetrieveEmployeeHandler();
         UpdateEmployeeHandler updateEmployeeHandler = new UpdateEmployeeHandler();
 

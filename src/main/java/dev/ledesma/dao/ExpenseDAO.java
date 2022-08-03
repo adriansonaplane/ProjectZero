@@ -14,7 +14,8 @@ public interface ExpenseDAO {
     Expense getExpenseById(int id);
     Set<Expense> getAllExpenses();
     Set<Expense> getAllEmployeeExpenseById(int id);
-    boolean deleteAllEmployeeExpenseById(int id);
-    boolean deleteAllExpense();
+    Set<Expense> getAllExpenseByStatus(int id);
+
+
 
 }
