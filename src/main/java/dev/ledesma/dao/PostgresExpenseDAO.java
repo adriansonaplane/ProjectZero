@@ -13,20 +13,23 @@ public class PostgresExpenseDAO implements ExpenseDAO{
     static Logger logger = Logger.getLogger(PostgresExpenseDAO.class.getName());
     @Override
     public boolean createExpense(Expense expense) {
+
         try(Connection conn = ConnectionUtility.createConnection()){
-            String sql = "insert into expense values(default, ?, ?, ?, ?, ?)";
+            String sql = "insert into expense values (default, ?, ?, ?, ?, ?, ?)";
             PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             ps.setInt(1, expense.getAmount());
             ps.setLong(2, expense.getDate());
             ps.setString(3, expense.getCategory());
             ps.setString(4, expense.getDescription());
-            ps.setInt(5, expense.getStatus());
+            ps.setString(5, expense.getStatus().toString());
+            ps.setInt( 6, expense.getEmployeeId());
+            ps.execute();
 
-            ResultSet rs = ps.getGeneratedKeys();
-            rs.next();
-
-            int key = rs.getInt("id");
-            expense.setId(key);
+//            ResultSet rs = ps.getGeneratedKeys();
+//            rs.next();
+//
+//            int key = rs.getInt("id");
+//            expense.setId(key);
 
             return true;
         }catch(SQLException e){
@@ -60,8 +63,8 @@ public class PostgresExpenseDAO implements ExpenseDAO{
             ps.setLong(2, expense.getDate());
             ps.setString(3, expense.getCategory());
             ps.setString(4, expense.getDescription());
-            ps.setInt(5, expense.getStatus());
-
+            ps.setString(5, expense.getStatus().toString());
+            ps.setInt( 6, expense.getId());
             ps.executeUpdate();
 
             return true;
@@ -92,7 +95,8 @@ public class PostgresExpenseDAO implements ExpenseDAO{
             expense.setDate(rs.getLong("date"));
             expense.setCategory(rs.getString("category"));
             expense.setDescription(rs.getString("description"));
-            expense.setStatus(rs.getInt("status"));
+            expense.setStatus(Expense.expenseStatus.valueOf(rs.getString("status")));
+            expense.setEmployeeId(rs.getInt("employee_id"));
 
             return expense;
         }catch(SQLException e){
@@ -118,7 +122,8 @@ public class PostgresExpenseDAO implements ExpenseDAO{
                 expense.setDate(rs.getLong("date"));
                 expense.setCategory(rs.getString("category"));
                 expense.setDescription(rs.getString("description"));
-                expense.setStatus(rs.getInt("status"));
+                expense.setStatus(Expense.expenseStatus.valueOf(rs.getString("status")));
+                expense.setEmployeeId(rs.getInt("employee_id"));
                 expenseSet.add(expense);
             }
             return expenseSet;
@@ -147,7 +152,8 @@ public class PostgresExpenseDAO implements ExpenseDAO{
                 expense.setDate(rs.getLong("date"));
                 expense.setCategory(rs.getString("category"));
                 expense.setDescription(rs.getString("description"));
-                expense.setStatus(rs.getInt("status"));
+                expense.setStatus(Expense.expenseStatus.valueOf(rs.getString("status")));
+                expense.setEmployeeId(rs.getInt("employee_id"));
                 expense.setEmployeeId(rs.getInt("employee_id"));
                 expenseSet.add(expense);
             }
@@ -176,7 +182,8 @@ public class PostgresExpenseDAO implements ExpenseDAO{
                 expense.setDate(rs.getLong("date"));
                 expense.setCategory(rs.getString("category"));
                 expense.setDescription(rs.getString("description"));
-                expense.setStatus(rs.getInt("status"));
+                expense.setStatus(Expense.expenseStatus.valueOf(rs.getString("status")));
+                expense.setEmployeeId(rs.getInt("employee_id"));
                 expense.setEmployeeId(rs.getInt("employee_id"));
                 expenseSet.add(expense);
             }

@@ -13,7 +13,7 @@ public class ConnectionUtility {
     public static Connection createConnection() {
 
         try {
-            Connection conn = DriverManager.getConnection("jdbc:postgresql://ledesma-sql-server.postgres.database.azure.com:5432/projectzero?user=adrianledesma&password=uvSaPZ6K8QdXByX&ssl=false");
+            Connection conn = DriverManager.getConnection(System.getenv("AZURE_DB"));
             return conn;
         } catch (SQLException e) {
             e.printStackTrace();

@@ -6,6 +6,9 @@ import dev.ledesma.entities.Employee;
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.*;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
 class EmployeeDAOTest {
@@ -16,32 +19,45 @@ class EmployeeDAOTest {
     private static Employee testEmployee = null;
 
     @Test
-    @Order(1)
     void createEmployee() {
         Employee test = new Employee(1, "Adrian", "Ledesma", "CEO");
         boolean empTest = empDao.createEmployee(test);
         EmployeeDAOTest.testEmployee = test;
         System.out.print(test);
-        Assertions.assertEquals(true, empTest);
+        Assertions.assertTrue(empTest);
     }
 
     @Test
     void deleteEmployee() {
+        Assertions.assertTrue(empDao.deleteEmployee(1));
     }
 
     @Test
     void updateEmployee() {
+        Employee test = new Employee(1, "Adrian", "Ledesman", "CFO");
+        boolean empTest = empDao.updateEmployee(test);
+        Assertions.assertTrue(empTest);
     }
 
     @Test
     void getEmployeeById() {
+        Employee testEmp = new Employee();
+        testEmp = empDao.getEmployeeById(2);
+        System.out.print(testEmp);
+        Assertions.assertInstanceOf(Employee.class, testEmp);
     }
 
     @Test
     void getAllEmployees() {
+        Set<Employee> empSet = new HashSet<>();
+        empSet = empDao.getAllEmployees();
+        Employee test = new Employee(3, "Adrian", "Ledesma", "CEO");
+        System.out.println(empSet);
+        Assertions.assertTrue(empSet.contains(test));
     }
 
     @Test
     void deleteAllEmpoyees() {
+        Assertions.assertTrue(empDao.deleteAllEmpoyees());
     }
 }
