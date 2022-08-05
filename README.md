@@ -1,5 +1,5 @@
-# Project 0
-
+# ProjectZero
+Project Zero -- Java Full Stack Development
 ## Overview
 You will be creating a REST API for an expense reimbursement system. The system will will allow the company to track expenses and analyze spending. You will design the entities. You have two entities. Employee and Expense. You will demo your application 8/10. There is no need to make any presentation materials. You may present directly from Intellij. REMINDER. ***This is not college. There are no extensions. Not having a workable project 8/10 is grounds for an immediate drop***. I would suggest finishing early so you can have Patrick or Adam look over and give you a seal of approval.
 
