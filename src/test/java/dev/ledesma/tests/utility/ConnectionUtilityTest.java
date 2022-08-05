@@ -12,13 +12,13 @@ import java.util.Map;
 public class ConnectionUtilityTest {
     @Test
     void createConnection() {
-        Connection conn = null;
         try {
-            conn = DriverManager.getConnection(System.getenv("AZURE_DB"));
+            Connection conn = DriverManager.getConnection(System.getenv("AZURE_DB"));
+            System.out.println(conn);
+            Assertions.assertNotNull(conn);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        System.out.println(conn);
-        Assertions.assertNotNull(conn);
+
     }
 }

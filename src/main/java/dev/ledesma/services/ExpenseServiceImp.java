@@ -2,14 +2,8 @@ package dev.ledesma.services;
 
 import dev.ledesma.dao.ExpenseDAO;
 import dev.ledesma.entities.Expense;
-import dev.ledesma.utils.ConnectionUtility;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 
 public class ExpenseServiceImp implements ExpenseService {
 
@@ -42,9 +36,9 @@ public class ExpenseServiceImp implements ExpenseService {
     }
 
     @Override
-    public boolean modifyExpense(int id) {
+    public boolean modifyExpense(int id, Expense.expenseStatus status) {
 
-        boolean isSuccessful = this.expDAO.modifyExpense(id);
+        boolean isSuccessful = this.expDAO.modifyExpense(id, status);
         return isSuccessful;
     }
 
@@ -55,9 +49,9 @@ public class ExpenseServiceImp implements ExpenseService {
     }
 
     @Override
-    public Set<Expense> getAllExpenses() {
+    public List<Expense> getAllExpenses() {
 
-        Set<Expense> expenses = this.expDAO.getAllExpenses();
+        List<Expense> expenses = this.expDAO.getAllExpenses();
 
         if(expenses.size() == 0){
             throw new RuntimeException("Expense Set is empty!");
@@ -66,9 +60,9 @@ public class ExpenseServiceImp implements ExpenseService {
     }
 
     @Override
-    public Set<Expense> getAllEmployeeExpenseById(int id) {
+    public List<Expense> getAllEmployeeExpenseById(int id) {
 
-        Set<Expense> empExpense = this.expDAO.getAllEmployeeExpenseById(id);
+        List<Expense> empExpense = this.expDAO.getAllEmployeeExpenseById(id);
 
         if(empExpense.size() == 0){
             throw new RuntimeException("Employee Expense Set is empty!");
@@ -78,8 +72,15 @@ public class ExpenseServiceImp implements ExpenseService {
     }
 
     @Override
-    public Set<Expense> getAllEmployeeExpenseByStatus(int id) {
-        return null;
+    public List<Expense> getAllEmployeeExpenseByStatus(Expense.expenseStatus status) {
+
+        List<Expense> empExpense = this.expDAO.getAllExpenseByStatus(status);
+
+        if(empExpense.size() == 0){
+            throw new RuntimeException("Employee Expense Set is empty!");
+        }
+
+        return empExpense;
     }
 
 }

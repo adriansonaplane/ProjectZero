@@ -3,7 +3,7 @@ package dev.ledesma.services;
 import dev.ledesma.dao.EmployeeDAO;
 import dev.ledesma.entities.Employee;
 
-import java.util.Set;
+import java.util.List;
 
 public class EmployeeServiceImp implements EmployeeService{
 
@@ -40,9 +40,9 @@ public class EmployeeServiceImp implements EmployeeService{
     }
 
     @Override
-    public Set<Employee> getAllEmployees() {
+    public List<Employee> getAllEmployees() {
 
-        Set<Employee> employees = this.empDAO.getAllEmployees();
+        List<Employee> employees = this.empDAO.getAllEmployees();
 
         if(employees.size() == 0){
             throw new RuntimeException("Employee Set is empty!");

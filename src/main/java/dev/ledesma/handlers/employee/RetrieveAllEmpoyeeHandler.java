@@ -7,8 +7,7 @@ import io.javalin.http.Context;
 import io.javalin.http.Handler;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 
 public class RetrieveAllEmpoyeeHandler implements Handler {
 
@@ -16,8 +15,7 @@ public class RetrieveAllEmpoyeeHandler implements Handler {
     @Override
     public void handle(@NotNull Context ctx) throws Exception {
 
-        Set<Employee> employeeSet = new HashSet<>();
-        employeeSet = App.employeeService.getAllEmployees();
+        List<Employee> employeeSet = App.employeeService.getAllEmployees();
 
         if(employeeSet.size() == 0){
             ctx.status(404);

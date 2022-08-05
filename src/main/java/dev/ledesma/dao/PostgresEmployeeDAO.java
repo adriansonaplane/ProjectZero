@@ -5,8 +5,8 @@ import dev.ledesma.utils.ConnectionUtility;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class PostgresEmployeeDAO implements EmployeeDAO{
@@ -18,7 +18,7 @@ public class PostgresEmployeeDAO implements EmployeeDAO{
         try {
         Connection conn = ConnectionUtility.createConnection();
         String sql = "insert into employee values (default, ?, ?, ?)";
-        PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+        PreparedStatement ps = conn.prepareStatement(sql);//Statement.RETURN_GENERATED_KEYS
         ps.setString(1, employee.getFirstName());
         ps.setString(2, employee.getLastName());
         ps.setString(3, employee.getTitle());
@@ -97,14 +97,14 @@ public class PostgresEmployeeDAO implements EmployeeDAO{
     }
 
     @Override
-    public Set<Employee> getAllEmployees() {
+    public List<Employee> getAllEmployees() {
 
         try(Connection conn = ConnectionUtility.createConnection()){
             String sql = "select * from employee";
             PreparedStatement ps = conn.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
 
-            Set<Employee> employeeSet = new HashSet<>();
+            List<Employee> employeeSet = new ArrayList<>();
 
             while(rs.next()){
                 Employee employee = new Employee();
@@ -127,6 +127,9 @@ public class PostgresEmployeeDAO implements EmployeeDAO{
         try(Connection conn = ConnectionUtility.createConnection()){
             String sql = "delete from employee";
             PreparedStatement ps = conn.prepareStatement(sql);
+            ps.execute();
+            sql = "alter sequence employee_id_seq restart with 1";
+            ps = conn.prepareStatement(sql);
             ps.execute();
             return true;
         }catch(SQLException e){

@@ -11,7 +11,6 @@ public class Expense {
     private String description;
     private expenseStatus status;
     private int employeeId;
-
     public enum expenseStatus{
         PENDING,
         APPROVED,

@@ -7,7 +7,9 @@ import io.javalin.http.Context;
 import io.javalin.http.Handler;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class RetrieveAllEmployeeExpenseHandler implements Handler {
@@ -16,9 +18,7 @@ public class RetrieveAllEmployeeExpenseHandler implements Handler {
     public void handle(@NotNull Context ctx) throws Exception {
 
         int id = Integer.parseInt(ctx.pathParam("id"));
-        Set<Expense> empExpenseSet = new HashSet<>();
-
-        empExpenseSet = App.expenseService.getAllEmployeeExpenseById(id);
+        List<Expense> empExpenseSet = App.expenseService.getAllEmployeeExpenseById(id);
 
         if(empExpenseSet.size() == 0){
             ctx.status(404);
