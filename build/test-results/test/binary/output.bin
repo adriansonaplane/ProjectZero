@@ -1,0 +1,251 @@
+
+Creating Employees...
+[Employee{id=0, firstName='William', lastName='Morales', title='Chief Technology Officer'}
+REmployee{id=0, firstName='Kenneth', lastName='Jimenez', title='Finance Manager'}
+TEmployee{id=0, firstName='Edward', lastName='Lewis', title='Executive Assistants'}
+WEmployee{id=0, firstName='Jonathan', lastName='Flores', title='Sales Representative'}
+[Employee{id=0, firstName='Dennis', lastName='Anderson', title='Human Resource Personnel'}
+VEmployee{id=0, firstName='Samuel', lastName='Ross', title='Chief Operating Officer'}
+UEmployee{id=0, firstName='Peter', lastName='King', title='Human Resources Manager'}
+KEmployee{id=0, firstName='Jacob', lastName='Edwards', title='Operations'}
+WEmployee{id=0, firstName='Kenneth', lastName='Diaz', title='Chief Marketing Officer'}
+VEmployee{id=0, firstName='Keith', lastName='Lewis', title='Chief Operating Officer'}
+OEmployee{id=0, firstName='Billy', lastName='Ramos', title='Business Analyst'}
+WEmployee{id=0, firstName='William', lastName='Cruz', title='Chief Marketing Officer'}
+LEmployee{id=0, firstName='Zachary', lastName='Johnson', title='Executive'}
+VEmployee{id=0, firstName='Noah', lastName='Allen', title='Chief Technology Officer'}
+XEmployee{id=0, firstName='Andrew', lastName='Taylor', title='Chief Financial Officer'}
+JEmployee{id=0, firstName='William', lastName='Wood', title='Accountant'}
+YEmployee{id=0, firstName='Brandon', lastName='Thomas', title='Chief Executive Officer'}
+UEmployee{id=0, firstName='Christopher', lastName='Smith', title='Business Analyst'}
+YEmployee{id=0, firstName='Philip', lastName='Howard', title='Human Resource Personnel'}
+[Employee{id=0, firstName='Samuel', lastName='Gutierrez', title='Chief Financial Officer'}
+YEmployee{id=0, firstName='Gerald', lastName='Parker', title='Chief Technology Officer'}
+UEmployee{id=0, firstName='Roger', lastName='Ruiz', title='Human Resources Manager'}
+WEmployee{id=0, firstName='Henry', lastName='Flores', title='Chief Operating Officer'}
+TEmployee{id=0, firstName='Walter', lastName='Lewis', title='Marketing Specialist'}
+LEmployee{id=0, firstName='Lawrence', lastName='Harris', title='President'}
+ZEmployee{id=0, firstName='Charles', lastName='Turner', title='Administrative Assistant'}
+LEmployee{id=0, firstName='Jerry', lastName='Wood', title='Vice President'}
+YEmployee{id=0, firstName='Larry', lastName='Jackson', title='Administrative Assistant'}
+REmployee{id=0, firstName='Peter', lastName='Campbell', title='Business Analyst'}
+WEmployee{id=0, firstName='Terry', lastName='Nelson', title='Chief Marketing Officer'}
+]Employee{id=0, firstName='Christopher', lastName='Cooper', title='Chief Financial Officer'}
+TEmployee{id=0, firstName='Samuel', lastName='Jones', title='Sales Representative'}
+XEmployee{id=0, firstName='Joshua', lastName='Taylor', title='Chief Operating Officer'}
+VEmployee{id=0, firstName='Ryan', lastName='Turner', title='Chief Operating Officer'}
+TEmployee{id=0, firstName='Ralph', lastName='Parker', title='Sales Representative'}
+LEmployee{id=0, firstName='Eric', lastName='Long', title='Product Manager'}
+IEmployee{id=0, firstName='Roy', lastName='Thompson', title='President'}
+WEmployee{id=0, firstName='Bruce', lastName='Taylor', title='Human Resources Manager'}
+NEmployee{id=0, firstName='Frank', lastName='Baker', title='Product Manager'}
+VEmployee{id=0, firstName='Wayne', lastName='Hall', title='Administrative Assistant'}
+HEmployee{id=0, firstName='Jeremy', lastName='Hall', title='Executive'}
+LEmployee{id=0, firstName='Roy', lastName='Diaz', title='Business Analyst'}
+LEmployee{id=0, firstName='Paul', lastName='Hill', title='Product Manager'}
+KEmployee{id=0, firstName='Matthew', lastName='Peterson', title='Manager'}
+YEmployee{id=0, firstName='Dennis', lastName='Howard', title='Human Resource Personnel'}
+KEmployee{id=0, firstName='Raymond', lastName='Chavez', title='Executive'}
+REmployee{id=0, firstName='Scott', lastName='Rodriguez', title='Project Manager'}
+PEmployee{id=0, firstName='George', lastName='Martin', title='Project Manager'}
+JEmployee{id=0, firstName='David', lastName='Bennet', title='Accountant'}
+REmployee{id=0, firstName='Alexander', lastName='Lewis', title='Product Manager'}
+YEmployee{id=0, firstName='Brandon', lastName='Martin', title='Chief Executive Officer'}
+JEmployee{id=0, firstName='William', lastName='Cook', title='Operations'}
+UEmployee{id=0, firstName='Jesse', lastName='Ruiz', title='Chief Financial Officer'}
+OEmployee{id=0, firstName='Benjamin', lastName='Rodriguez', title='Executive'}
+MEmployee{id=0, firstName='Arthur', lastName='Hernandez', title='President'}
+REmployee{id=0, firstName='Douglas', lastName='Clark', title='Marketing Manager'}
+LEmployee{id=0, firstName='Douglas', lastName='Carter', title='Accountant'}
+^Employee{id=0, firstName='Larry', lastName='Allen', title='Customer Service Representative'}
+YEmployee{id=0, firstName='Douglas', lastName='Perez', title='Administrative Assistant'}
+`Employee{id=0, firstName='Arthur', lastName='Harris', title='Customer Service Representative'}
+XEmployee{id=0, firstName='Samuel', lastName='Rivera', title='Chief Executive Officer'}
+VEmployee{id=0, firstName='Michael', lastName='Turner', title='Marketing Specialist'}
+TEmployee{id=0, firstName='Eric', lastName='Hill', title='Human Resources Manager'}
+REmployee{id=0, firstName='Samuel', lastName='Mitchell', title='Finance Manager'}
+ZEmployee{id=0, firstName='Nicholas', lastName='Smith', title='Administrative Assistant'}
+XEmployee{id=0, firstName='Bobby', lastName='Foster', title='Administrative Assistant'}
+[Employee{id=0, firstName='Richard', lastName='Castillo', title='Chief Executive Officer'}
+YEmployee{id=0, firstName='Eric', lastName='Campbell', title='Chief Technology Officer'}
+VEmployee{id=0, firstName='Juan', lastName='Miller', title='Chief Marketing Officer'}
+XEmployee{id=0, firstName='Wayne', lastName='Morgan', title='Administrative Assistant'}
+bEmployee{id=0, firstName='Timothy', lastName='Roberts', title='Customer Service Representative'}
+SEmployee{id=0, firstName='Joseph', lastName='Cruz', title='Executive Assistants'}
+LEmployee{id=0, firstName='Zachary', lastName='Harris', title='Accountant'}
+_Employee{id=0, firstName='Scott', lastName='Howard', title='Customer Service Representative'}
+VEmployee{id=0, firstName='Ralph', lastName='Davis', title='Chief Executive Officer'}
+ZEmployee{id=0, firstName='Anthony', lastName='Martin', title='Chief Technology Officer'}
+XEmployee{id=0, firstName='Samuel', lastName='Murphy', title='Chief Executive Officer'}
+ZEmployee{id=0, firstName='Raymond', lastName='Sanders', title='Chief Marketing Officer'}
+KEmployee{id=0, firstName='Terry', lastName='Anderson', title='President'}
+LEmployee{id=0, firstName='Kevin', lastName='Cook', title='Vice President'}
+XEmployee{id=0, firstName='Douglas', lastName='Davis', title='Chief Financial Officer'}
+QEmployee{id=0, firstName='Logan', lastName='Lee', title='Marketing Specialist'}
+XEmployee{id=0, firstName='Jeffrey', lastName='Cruz', title='Chief Technology Officer'}
+OEmployee{id=0, firstName='Logan', lastName='Turner', title='Finance Manager'}
+IEmployee{id=0, firstName='Bruce', lastName='Scott', title='Operations'}
+Created 85 Employees
+
+Deleting 72 Employees...
+\Employee{id=67, firstName='Richard', lastName='Castillo', title='Chief Executive Officer'}
+JEmployee{id=85, firstName='Bruce', lastName='Scott', title='Operations'}
+ZEmployee{id=45, firstName='Dennis', lastName='Howard', title='Human Resource Personnel'}
+WEmployee{id=34, firstName='Ryan', lastName='Turner', title='Chief Operating Officer'}
+MEmployee{id=27, firstName='Jerry', lastName='Wood', title='Vice President'}
+PEmployee{id=84, firstName='Logan', lastName='Turner', title='Finance Manager'}
+ZEmployee{id=51, firstName='Brandon', lastName='Martin', title='Chief Executive Officer'}
+[Employee{id=76, firstName='Anthony', lastName='Martin', title='Chief Technology Officer'}
+ZEmployee{id=68, firstName='Eric', lastName='Campbell', title='Chief Technology Officer'}
+YEmployee{id=83, firstName='Jeffrey', lastName='Cruz', title='Chief Technology Officer'}
+ZEmployee{id=21, firstName='Gerald', lastName='Parker', title='Chief Technology Officer'}
+XEmployee{id=23, firstName='Henry', lastName='Flores', title='Chief Operating Officer'}
+LEmployee{id=46, firstName='Raymond', lastName='Chavez', title='Executive'}
+UEmployee{id=32, firstName='Samuel', lastName='Jones', title='Sales Representative'}
+^Employee{id=31, firstName='Christopher', lastName='Cooper', title='Chief Financial Officer'}
+JEmployee{id=37, firstName='Roy', lastName='Thompson', title='President'}
+ZEmployee{id=28, firstName='Larry', lastName='Jackson', title='Administrative Assistant'}
+[Employee{id=26, firstName='Charles', lastName='Turner', title='Administrative Assistant'}
+WEmployee{id=40, firstName='Wayne', lastName='Hall', title='Administrative Assistant'}
+ZEmployee{id=19, firstName='Philip', lastName='Howard', title='Human Resource Personnel'}
+MEmployee{id=25, firstName='Lawrence', lastName='Harris', title='President'}
+WEmployee{id=75, firstName='Ralph', lastName='Davis', title='Chief Executive Officer'}
+\Employee{id=20, firstName='Samuel', lastName='Gutierrez', title='Chief Financial Officer'}
+SEmployee{id=29, firstName='Peter', lastName='Campbell', title='Business Analyst'}
+UEmployee{id=7, firstName='Peter', lastName='King', title='Human Resources Manager'}
+SEmployee{id=64, firstName='Samuel', lastName='Mitchell', title='Finance Manager'}
+MEmployee{id=80, firstName='Kevin', lastName='Cook', title='Vice President'}
+[Employee{id=5, firstName='Dennis', lastName='Anderson', title='Human Resource Personnel'}
+MEmployee{id=36, firstName='Eric', lastName='Long', title='Product Manager'}
+_Employee{id=58, firstName='Larry', lastName='Allen', title='Customer Service Representative'}
+[Employee{id=1, firstName='William', lastName='Morales', title='Chief Technology Officer'}
+UEmployee{id=63, firstName='Eric', lastName='Hill', title='Human Resources Manager'}
+[Employee{id=65, firstName='Nicholas', lastName='Smith', title='Administrative Assistant'}
+[Employee{id=78, firstName='Raymond', lastName='Sanders', title='Chief Marketing Officer'}
+MEmployee{id=42, firstName='Roy', lastName='Diaz', title='Business Analyst'}
+YEmployee{id=33, firstName='Joshua', lastName='Taylor', title='Chief Operating Officer'}
+`Employee{id=74, firstName='Scott', lastName='Howard', title='Customer Service Representative'}
+MEmployee{id=57, firstName='Douglas', lastName='Carter', title='Accountant'}
+PEmployee{id=54, firstName='Benjamin', lastName='Rodriguez', title='Executive'}
+YEmployee{id=61, firstName='Samuel', lastName='Rivera', title='Chief Executive Officer'}
+YEmployee{id=81, firstName='Douglas', lastName='Davis', title='Chief Financial Officer'}
+WEmployee{id=14, firstName='Noah', lastName='Allen', title='Chief Technology Officer'}
+YEmployee{id=66, firstName='Bobby', lastName='Foster', title='Administrative Assistant'}
+WEmployee{id=9, firstName='Kenneth', lastName='Diaz', title='Chief Marketing Officer'}
+VEmployee{id=22, firstName='Roger', lastName='Ruiz', title='Human Resources Manager'}
+VEmployee{id=6, firstName='Samuel', lastName='Ross', title='Chief Operating Officer'}
+XEmployee{id=30, firstName='Terry', lastName='Nelson', title='Chief Marketing Officer'}
+KEmployee{id=49, firstName='David', lastName='Bennet', title='Accountant'}
+TEmployee{id=3, firstName='Edward', lastName='Lewis', title='Executive Assistants'}
+QEmployee{id=48, firstName='George', lastName='Martin', title='Project Manager'}
+WEmployee{id=62, firstName='Michael', lastName='Turner', title='Marketing Specialist'}
+aEmployee{id=60, firstName='Arthur', lastName='Harris', title='Customer Service Representative'}
+WEmployee{id=10, firstName='Keith', lastName='Lewis', title='Chief Operating Officer'}
+WEmployee{id=69, firstName='Juan', lastName='Miller', title='Chief Marketing Officer'}
+MEmployee{id=13, firstName='Zachary', lastName='Johnson', title='Executive'}
+SEmployee{id=56, firstName='Douglas', lastName='Clark', title='Marketing Manager'}
+WEmployee{id=4, firstName='Jonathan', lastName='Flores', title='Sales Representative'}
+MEmployee{id=43, firstName='Paul', lastName='Hill', title='Product Manager'}
+YEmployee{id=77, firstName='Samuel', lastName='Murphy', title='Chief Executive Officer'}
+SEmployee{id=47, firstName='Scott', lastName='Rodriguez', title='Project Manager'}
+TEmployee{id=72, firstName='Joseph', lastName='Cruz', title='Executive Assistants'}
+ZEmployee{id=59, firstName='Douglas', lastName='Perez', title='Administrative Assistant'}
+UEmployee{id=24, firstName='Walter', lastName='Lewis', title='Marketing Specialist'}
+KEmployee{id=52, firstName='William', lastName='Cook', title='Operations'}
+YEmployee{id=15, firstName='Andrew', lastName='Taylor', title='Chief Financial Officer'}
+YEmployee{id=70, firstName='Wayne', lastName='Morgan', title='Administrative Assistant'}
+ZEmployee{id=17, firstName='Brandon', lastName='Thomas', title='Chief Executive Officer'}
+VEmployee{id=53, firstName='Jesse', lastName='Ruiz', title='Chief Financial Officer'}
+UEmployee{id=35, firstName='Ralph', lastName='Parker', title='Sales Representative'}
+KEmployee{id=16, firstName='William', lastName='Wood', title='Accountant'}
+REmployee{id=2, firstName='Kenneth', lastName='Jimenez', title='Finance Manager'}
+SEmployee{id=50, firstName='Alexander', lastName='Lewis', title='Product Manager'}
+Deleted 72 Employees
+
+Updating 5 Employees...
+Trying Id... 74 of 85
+Trying Id... 37 of 85
+Trying Id... 85 of 85
+Trying Id... 15 of 85
+Trying Id... 64 of 85
+Trying Id... 9 of 85
+Trying Id... 26 of 85
+Trying Id... 18 of 85
+`Original: Employee{id=18, firstName='Christopher', lastName='Smith', title='Business Analyst'}
+RUpdated: Employee{id=18, firstName='Mason', lastName='Eric', title='Accountant'}
+Trying Id... 78 of 85
+Trying Id... 81 of 85
+Trying Id... 49 of 85
+Trying Id... 17 of 85
+Trying Id... 58 of 85
+Trying Id... 80 of 85
+Trying Id... 10 of 85
+Trying Id... 19 of 85
+Trying Id... 21 of 85
+Trying Id... 81 of 85
+Trying Id... 36 of 85
+Trying Id... 70 of 85
+Trying Id... 9 of 85
+Trying Id... 76 of 85
+Trying Id... 52 of 85
+Trying Id... 10 of 85
+Trying Id... 28 of 85
+Trying Id... 75 of 85
+Trying Id... 9 of 85
+Trying Id... 60 of 85
+Trying Id... 21 of 85
+Trying Id... 66 of 85
+Trying Id... 51 of 85
+Trying Id... 59 of 85
+Trying Id... 75 of 85
+Trying Id... 52 of 85
+Trying Id... 54 of 85
+Trying Id... 50 of 85
+Trying Id... 66 of 85
+Trying Id... 34 of 85
+Trying Id... 82 of 85
+\Original: Employee{id=82, firstName='Logan', lastName='Lee', title='Marketing Specialist'}
+\Updated: Employee{id=82, firstName='Russell', lastName='Ethan', title='Marketing Manager'}
+Trying Id... 7 of 85
+Trying Id... 28 of 85
+Trying Id... 57 of 85
+Trying Id... 41 of 85
+SOriginal: Employee{id=41, firstName='Jeremy', lastName='Hall', title='Executive'}
+TUpdated: Employee{id=41, firstName='Charles', lastName='Aaron', title='Executive'}
+Trying Id... 55 of 85
+XOriginal: Employee{id=55, firstName='Arthur', lastName='Hernandez', title='President'}
+iUpdated: Employee{id=55, firstName='Paul', lastName='Richard', title='Customer Service Representative'}
+Trying Id... 67 of 85
+Trying Id... 39 of 85
+YOriginal: Employee{id=39, firstName='Frank', lastName='Baker', title='Product Manager'}
+SUpdated: Employee{id=39, firstName='David', lastName='Ethan', title='Production'}
+Updated 5 Employees
+
+Trying Id... 47 of 85
+Trying Id... 59 of 85
+Trying Id... 58 of 85
+Trying Id... 3 of 85
+Trying Id... 54 of 85
+Trying Id... 54 of 85
+Trying Id... 11 of 85
+cRetrieved Employee: Employee{id=11, firstName='Billy', lastName='Ramos', title='Business Analyst'}
+
+Retrieving All Employees..
+KEmployee{id=41, firstName='Charles', lastName='Aaron', title='Executive'}
+`Employee{id=55, firstName='Paul', lastName='Richard', title='Customer Service Representative'}
+KEmployee{id=8, firstName='Jacob', lastName='Edwards', title='Operations'}
+PEmployee{id=11, firstName='Billy', lastName='Ramos', title='Business Analyst'}
+XEmployee{id=12, firstName='William', lastName='Cruz', title='Chief Marketing Officer'}
+XEmployee{id=38, firstName='Bruce', lastName='Taylor', title='Human Resources Manager'}
+LEmployee{id=44, firstName='Matthew', lastName='Peterson', title='Manager'}
+cEmployee{id=71, firstName='Timothy', lastName='Roberts', title='Customer Service Representative'}
+MEmployee{id=73, firstName='Zachary', lastName='Harris', title='Accountant'}
+LEmployee{id=79, firstName='Terry', lastName='Anderson', title='President'}
+IEmployee{id=18, firstName='Mason', lastName='Eric', title='Accountant'}
+SEmployee{id=82, firstName='Russell', lastName='Ethan', title='Marketing Manager'}
+JEmployee{id=39, firstName='David', lastName='Ethan', title='Production'}
+Retrieved 13 Employees
+
+Deleting All Employees...
+Deleted All Employees
+
