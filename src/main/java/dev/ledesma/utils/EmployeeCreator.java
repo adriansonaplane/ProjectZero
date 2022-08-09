@@ -1,5 +1,7 @@
 package dev.ledesma.utils;
 
+import dev.ledesma.dao.EmployeeDAO;
+import dev.ledesma.dao.PostgresEmployeeDAO;
 import dev.ledesma.entities.Employee;
 
 import java.util.ArrayList;
@@ -45,11 +47,7 @@ public class EmployeeCreator {
 
     public EmployeeCreator(){
         Random r = new Random();
-        int amount = r.nextInt(100);
-
-        while(amount == 1){amount = r.nextInt(100);}
-
-        for(int i = 0; i < amount; i++) {
+        for(int i = 0; i < 100; i++) {
             Employee employee = new Employee();
             employee.setId(0);
             employee.setFirstName(firstNames[r.nextInt(firstNames.length)]);
@@ -60,6 +58,22 @@ public class EmployeeCreator {
     }
     public List<Employee> getEmployees() {
         return employees;
+    }
+    public void createEmployeeTable(){
+
+        EmployeeDAO employeeDAO = new PostgresEmployeeDAO();
+
+        System.out.println("\nCreating Employees...");
+        for(Employee e: employees) {
+
+            if(employeeDAO.createEmployee(e) == null){
+                System.out.println(e);
+                System.out.println("Could Not Create Employee\n");
+            }
+
+            System.out.println(e);
+        }
+        System.out.println("Created " + employees.size() + " Employees\n");
     }
 
 

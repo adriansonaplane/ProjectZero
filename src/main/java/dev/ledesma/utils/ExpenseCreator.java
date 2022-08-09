@@ -1,18 +1,15 @@
 package dev.ledesma.utils;
 
+import dev.ledesma.dao.ExpenseDAO;
+import dev.ledesma.dao.PostgresExpenseDAO;
+import dev.ledesma.entities.Employee;
 import dev.ledesma.entities.Expense;
-import kotlin.random.Random;
 
 import java.time.Instant;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-//import java.util.*;
+import java.util.*;
 
 public class ExpenseCreator {
-
-//    public Random r = new Random();
+    public static Random r = new Random();
     public List<Expense> expenses = new ArrayList<>();
     public expenseStatus status;
     public String[] category = {"Rent", "Transportation", "Car",
@@ -31,23 +28,41 @@ public class ExpenseCreator {
         private static final int SIZE = VALUES.size();
 
         public static Expense.expenseStatus randomStatus(){
-            return VALUES.get(Random.Default.nextInt(SIZE));
+            return VALUES.get(r.nextInt(SIZE));
         }
     }
 
     public ExpenseCreator(){
-        for(int i = 0; i < 500; i++){
+        Random r = new Random();
+        for(int i = 0; i < 100; i++){
             Expense expense = new Expense();
-            expense.setAmount(Random.Default.nextInt(10000));
-            long time = Instant.now().getEpochSecond() - Random.Default.nextInt(10000000);
+            expense.setId(0);
+            expense.setAmount(r.nextInt(10000));
+            long time = Instant.now().getEpochSecond() - r.nextInt(10000000);
             expense.setDate(time);
-            expense.setCategory(category[Random.Default.nextInt(category.length)]);
-            expense.setDescription(category[Random.Default.nextInt(category.length)]);
+            expense.setCategory(category[r.nextInt(category.length)]);
+            expense.setDescription(category[r.nextInt(category.length)]);
             expense.setStatus(ExpenseCreator.expenseStatus.randomStatus());
-            expense.setEmployeeId(Random.Default.nextInt(100));//Employee Creator Constructor Condition
+            expense.setEmployeeId(r.nextInt(100) + 1);
             expenses.add(expense);
         }
     }
 
     public List<Expense> getExpenses(){return expenses;}
+    public void createExpenseTable(){
+
+        ExpenseDAO expenseDAO = new PostgresExpenseDAO();
+
+            System.out.println("\nCreating Employees...");
+            for(Expense e: expenses) {
+
+                if(expenseDAO.createExpense(e) == null){
+                    System.out.println(e);
+                    System.out.println("Could Not Create Expense\n");
+                }
+
+                System.out.println(e);
+            }
+            System.out.println("Created " + expenses.size() + " Employees\n");
+    }
 }

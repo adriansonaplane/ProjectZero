@@ -14,13 +14,15 @@ public class CreateEmployeeHandler implements Handler {
         String json = ctx.body();
         Gson gson = new Gson();
         Employee employee = gson.fromJson(json, Employee.class);
-        boolean result = App.employeeService.createEmployee(employee);//change to employee type
+        Employee registeredEmployee = App.employeeService.createEmployee(employee);
+        String employeeJson = gson.toJson(registeredEmployee);
 
-        if(result){
+        if(registeredEmployee != null){
             ctx.status(201);
+            ctx.result(employeeJson);
         }else{
             ctx.status(400);
-            ctx.result("Coud not Create the Employee");
+            ctx.result("Could Not Create The Employee!");
         }
 
     }

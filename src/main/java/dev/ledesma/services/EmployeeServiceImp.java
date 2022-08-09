@@ -13,10 +13,15 @@ public class EmployeeServiceImp implements EmployeeService{
         this.empDAO = empDAO;
     }
     @Override
-    public boolean createEmployee(Employee employee) {
+    public Employee createEmployee(Employee employee) {
 
-        boolean isSuccesful = this.empDAO.createEmployee(employee);
-        return isSuccesful;
+        if(employee == null){
+            throw new RuntimeException("Employee cannot be empty");
+        }
+
+        Employee savedEmployee = this.empDAO.createEmployee(employee);
+
+        return savedEmployee;
     }
 
     @Override
@@ -27,10 +32,15 @@ public class EmployeeServiceImp implements EmployeeService{
     }
 
     @Override
-    public boolean updateEmployee(Employee employee) {
+    public Employee updateEmployee(Employee employee) {
 
-        boolean isSuccessful = this.empDAO.updateEmployee(employee);
-        return isSuccessful;
+        if(employee == null){
+            throw new RuntimeException("Employee cannot be empty");
+        }
+
+        Employee updateEmployee = this.empDAO.updateEmployee(employee);
+
+        return updateEmployee;
     }
 
     @Override
@@ -48,12 +58,5 @@ public class EmployeeServiceImp implements EmployeeService{
             throw new RuntimeException("Employee Set is empty!");
         }
         return employees;
-    }
-
-    @Override
-    public boolean deleteAllEmpoyees() {
-
-        boolean isSuccessful = this.empDAO.deleteAllEmpoyees();
-        return isSuccessful;
     }
 }

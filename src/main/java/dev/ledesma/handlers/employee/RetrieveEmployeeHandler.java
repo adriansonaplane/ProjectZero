@@ -23,6 +23,7 @@ public class RetrieveEmployeeHandler implements Handler {
             ctx.result(json);
         }else{
             ctx.status(404);
+            ctx.result("Could Not Retrieve Employee!");
         }
 
     }

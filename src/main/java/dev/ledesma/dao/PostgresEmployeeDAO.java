@@ -13,25 +13,28 @@ public class PostgresEmployeeDAO implements EmployeeDAO{
 
     static Logger logger = Logger.getLogger(PostgresEmployeeDAO.class.getName());
     @Override
-    public boolean createEmployee(Employee employee) {
+    public Employee createEmployee(Employee employee) {
 
-        try {
-        Connection conn = ConnectionUtility.createConnection();
+        try(Connection conn = ConnectionUtility.createConnection()) {
+
         String sql = "insert into employee values (default, ?, ?, ?)";
-        PreparedStatement ps = conn.prepareStatement(sql);//Statement.RETURN_GENERATED_KEYS
+        PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);//Statement.RETURN_GENERATED_KEYS
         ps.setString(1, employee.getFirstName());
         ps.setString(2, employee.getLastName());
         ps.setString(3, employee.getTitle());
         ps.execute();
-//        ResultSet rs = ps.getGeneratedKeys();
-//        rs.next();
-//        int key = rs.getInt("id");
-//        employee.setId(key);
 
-        return true;
+        ResultSet rs = ps.getGeneratedKeys();
+        rs.next();
+
+        int key = rs.getInt("id");
+        employee.setId(key);
+
+        return employee;
         } catch (SQLException e) {
             e.printStackTrace();
-            return false;
+            logger.error("Could Not Create Employee: " + employee, e);
+            return null;
         }
 
     }
@@ -48,13 +51,13 @@ public class PostgresEmployeeDAO implements EmployeeDAO{
 
         }catch (SQLException e){
             e.printStackTrace();
+            logger.error("Could Not Delete Employee Id: " + id, e);
+            return false;
         }
-
-        return false;
     }
 
     @Override
-    public boolean updateEmployee(Employee employee) {
+    public Employee updateEmployee(Employee employee) {
 
         try(Connection conn = ConnectionUtility.createConnection()){
             String sql = "update employee set f_name = ?, l_name = ?, title = ? where id = ?";
@@ -65,12 +68,13 @@ public class PostgresEmployeeDAO implements EmployeeDAO{
             ps.setInt(4,employee.getId());
             ps.executeUpdate();
 
-            return true;
+            return employee;
 
         }catch(SQLException e){
             e.printStackTrace();
+            logger.error("Could Not Update Employee: " + employee, e);
+            return null;
         }
-        return false;
     }
 
     @Override
@@ -92,8 +96,9 @@ public class PostgresEmployeeDAO implements EmployeeDAO{
 
         }catch(SQLException e){
             e.printStackTrace();
+            logger.error("Could Not Retrieve Employee by Id: " + id, e);
+            return null;
         }
-        return null;
     }
 
     @Override
@@ -118,23 +123,9 @@ public class PostgresEmployeeDAO implements EmployeeDAO{
 
         }catch(SQLException e){
             e.printStackTrace();
+            logger.error("Could Not Retrieve All Employees", e);
+            return null;
         }
-        return null;
     }
 
-    @Override
-    public boolean deleteAllEmpoyees() {
-        try(Connection conn = ConnectionUtility.createConnection()){
-            String sql = "delete from employee";
-            PreparedStatement ps = conn.prepareStatement(sql);
-            ps.execute();
-            sql = "alter sequence employee_id_seq restart with 1";
-            ps = conn.prepareStatement(sql);
-            ps.execute();
-            return true;
-        }catch(SQLException e){
-            e.printStackTrace();
-        }
-        return false;
-    }
 }

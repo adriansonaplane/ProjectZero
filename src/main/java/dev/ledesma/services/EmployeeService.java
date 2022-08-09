@@ -6,10 +6,9 @@ import java.util.List;
 
 public interface EmployeeService {
 
-    boolean createEmployee(Employee employee);
+    Employee createEmployee(Employee employee);
     boolean deleteEmployee(int id);
-    boolean updateEmployee(Employee employee);
+    Employee updateEmployee(Employee employee);
     Employee getEmployeeById(int id);
     List<Employee> getAllEmployees();
-    boolean deleteAllEmpoyees();
 }

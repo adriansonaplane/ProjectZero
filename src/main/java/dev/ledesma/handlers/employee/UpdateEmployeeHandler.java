@@ -14,15 +14,15 @@ public class UpdateEmployeeHandler implements Handler {
         String empJson = ctx.body();
         Gson gson = new Gson();
         Employee employee = gson.fromJson(empJson, Employee.class);
-        boolean updatedEmp = App.employeeService.updateEmployee(employee);
+        Employee updatedEmp = App.employeeService.updateEmployee(employee);
 
-        if(updatedEmp) {
+        if(updatedEmp != null) {
             String json = gson.toJson(updatedEmp);
             ctx.status(201);
             ctx.result(json);
         }else{
             ctx.status(404);
-            ctx.result("Could not Update the Employee");
+            ctx.result("Could Not Update The Employee!");
         }
 
 

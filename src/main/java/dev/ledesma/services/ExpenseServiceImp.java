@@ -15,12 +15,26 @@ public class ExpenseServiceImp implements ExpenseService {
     }
 
     @Override
-    public boolean createExpense(Expense expense) {
+    public Expense createExpense(Expense expense) {
 
-        boolean isSuccessful = this.expDAO.createExpense(expense);
-        return isSuccessful;
+        if(expense == null){
+            throw new RuntimeException("Expense cannot be empty");
+        }
+
+        Expense savedExpense = this.expDAO.createExpense(expense);
+
+        return savedExpense;
     }
+    public Expense createExpense(int id, Expense expense) {
 
+        if(expense == null){
+            throw new RuntimeException("Expense cannot be empty");
+        }
+
+        Expense savedExpense = this.expDAO.createExpense(expense);
+
+        return savedExpense;
+    }
     @Override
     public boolean deleteExpense(int id) {
 
@@ -29,17 +43,23 @@ public class ExpenseServiceImp implements ExpenseService {
     }
 
     @Override
-    public boolean updateExpense(Expense expense) {
+    public Expense updateExpense(Expense expense) {
 
-        boolean isSuccessful = this.expDAO.updateExpense(expense);
-        return isSuccessful;
+        if(expense == null){
+            throw new RuntimeException("Employee cannot be empty");
+        }
+
+        Expense updateExpense = this.expDAO.updateExpense(expense);
+
+        return updateExpense;
     }
 
     @Override
-    public boolean modifyExpense(int id, Expense.expenseStatus status) {
+    public Expense modifyExpense(int id, Expense.expenseStatus status) {
 
-        boolean isSuccessful = this.expDAO.modifyExpense(id, status);
-        return isSuccessful;
+        Expense updatedExpense = this.expDAO.modifyExpense(id, status);
+
+        return updatedExpense;
     }
 
     @Override

@@ -22,6 +22,7 @@ public class RetrieveExpenseHandler implements Handler {
             ctx.result(json);
         }else{
             ctx.status(404);
+            ctx.result("Could not retrieve Expense!");
         }
 
 

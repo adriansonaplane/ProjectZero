@@ -19,7 +19,7 @@ public class RetrieveAllEmpoyeeHandler implements Handler {
 
         if(employeeSet.size() == 0){
             ctx.status(404);
-            ctx.result("Employee Set is empty!");
+            ctx.result("Employee Set Is Empty!");
         } else{
             Gson gson = new Gson();
             String json = gson.toJson(employeeSet);

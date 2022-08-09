@@ -6,10 +6,11 @@ import java.util.List;
 
 public interface ExpenseService {
 
-    boolean createExpense(Expense expense);
+    Expense createExpense(Expense expense);
+    Expense createExpense(int id, Expense expense);
     boolean deleteExpense(int id);
-    boolean updateExpense(Expense expense);
-    boolean modifyExpense(int id, Expense.expenseStatus status);
+    Expense updateExpense(Expense expense);
+    Expense modifyExpense(int id, Expense.expenseStatus status);
     Expense getExpenseById(int id);
     List<Expense> getAllExpenses();
     List<Expense> getAllEmployeeExpenseById(int id);

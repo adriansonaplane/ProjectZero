@@ -14,9 +14,10 @@ public class DeleteEmployeeHandler implements Handler {
 
         if (result) {
             ctx.status(204);
+            ctx.result("Employee Deleted!");
         } else {
             ctx.status(400);
-            ctx.result("Could not Delete the Employee");
+            ctx.result("Could not Delete the Employee!");
         }
     }
 }

@@ -14,16 +14,15 @@ public class UpdateExpenseHandler implements Handler {
         String expJson = ctx.body();
         Gson gson = new Gson();
         Expense expense = gson.fromJson(expJson, Expense.class);
-        boolean updatedExp = App.expenseService.updateExpense(expense);
+        Expense updatedExp = App.expenseService.updateExpense(expense);
 
-        if (updatedExp) {
+        if (updatedExp != null) {
             String json = gson.toJson(updatedExp);
             ctx.status(201);
             ctx.result(json);
         }else{
             ctx.status(404);
-            ctx.result("Could not Update the Expense");
+            ctx.result("Could not Update the Expense!");
         }
-
     }
 }

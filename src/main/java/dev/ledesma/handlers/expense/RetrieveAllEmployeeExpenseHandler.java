@@ -22,7 +22,7 @@ public class RetrieveAllEmployeeExpenseHandler implements Handler {
 
         if(empExpenseSet.size() == 0){
             ctx.status(404);
-            ctx.result("The Employee Expense Set is empty!");
+            ctx.result("The Employee Expense Set Is Empty!");
         } else{
             Gson gson = new Gson();
             String json = gson.toJson(empExpenseSet);
