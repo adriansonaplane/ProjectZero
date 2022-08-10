@@ -3,6 +3,7 @@ package dev.ledesma.handlers.expense;
 import com.google.gson.Gson;
 import dev.ledesma.app.App;
 import dev.ledesma.entities.Expense;
+import dev.ledesma.entities.ExpenseStatus;
 import io.javalin.http.Context;
 import io.javalin.http.Handler;
 import org.jetbrains.annotations.NotNull;
@@ -12,7 +13,7 @@ public class ModifyExpenseHandler implements Handler {
     public void handle(@NotNull Context ctx) throws Exception {
         int id = Integer.parseInt(ctx.pathParam("id"));
         String status = ctx.pathParam("status").toUpperCase();
-        Expense updatedExp = App.expenseService.modifyExpense(id, Expense.expenseStatus.valueOf(status));
+        Expense updatedExp = App.expenseService.modifyExpense(id, ExpenseStatus.valueOf(status));
 
         if(status == "PENDING"){
             Gson gson = new Gson();

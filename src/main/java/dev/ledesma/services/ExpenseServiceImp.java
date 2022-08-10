@@ -2,6 +2,7 @@ package dev.ledesma.services;
 
 import dev.ledesma.dao.ExpenseDAO;
 import dev.ledesma.entities.Expense;
+import dev.ledesma.entities.ExpenseStatus;
 
 import java.util.List;
 
@@ -55,7 +56,7 @@ public class ExpenseServiceImp implements ExpenseService {
     }
 
     @Override
-    public Expense modifyExpense(int id, Expense.expenseStatus status) {
+    public Expense modifyExpense(int id, ExpenseStatus status) {
 
         Expense updatedExpense = this.expDAO.modifyExpense(id, status);
 
@@ -92,7 +93,7 @@ public class ExpenseServiceImp implements ExpenseService {
     }
 
     @Override
-    public List<Expense> getAllEmployeeExpenseByStatus(Expense.expenseStatus status) {
+    public List<Expense> getAllEmployeeExpenseByStatus(ExpenseStatus status) {
 
         List<Expense> empExpense = this.expDAO.getAllExpenseByStatus(status);
 

@@ -1,0 +1,435 @@
+Updating 95 Expenses...
+Trying Id... 73 of 101
+Trying Id... 53 of 101
+Trying Id... 4 of 101
+Trying Id... 77 of 101
+Trying Id... 79 of 101
+Trying Id... 85 of 101
+Trying Id... 39 of 101
+Trying Id... 43 of 101
+çOriginal: Expense{id=43, amount=8848, date=1654194593, category='Transportation', description='Subscription', status=PENDING, employeeId=5}
+ÅUpdated: Expense{id=43, amount=1242, date=1658706989, category='Debt', description='Credit Card', status=PENDING, employeeId=5}
+Trying Id... 72 of 101
+Trying Id... 14 of 101
+Trying Id... 27 of 101
+Trying Id... 51 of 101
+ÄOriginal: Expense{id=51, amount=5103, date=1658379800, category='School', description='School', status=PENDING, employeeId=90}
+}Updated: Expense{id=51, amount=2617, date=1651644497, category='Travel', description='Debt', status=PENDING, employeeId=90}
+Trying Id... 57 of 101
+ÅOriginal: Expense{id=57, amount=3117, date=1651479126, category='Emergency', description='Rent', status=PENDING, employeeId=96}
+~Updated: Expense{id=57, amount=7250, date=1650470745, category='Rent', description='Utility', status=PENDING, employeeId=96}
+Trying Id... 82 of 101
+zOriginal: Expense{id=82, amount=3419, date=1652165675, category='Loan', description='Car', status=PENDING, employeeId=4}
+Updated: Expense{id=82, amount=3932, date=1655511360, category='Cell Phone', description='Car', status=PENDING, employeeId=4}
+Trying Id... 42 of 101
+|Original: Expense{id=42, amount=5277, date=1653154105, category='Debt', description='Food', status=PENDING, employeeId=39}
+ÅUpdated: Expense{id=42, amount=224, date=1659487391, category='Insurance', description='Travel', status=PENDING, employeeId=39}
+Trying Id... 24 of 101
+Trying Id... 95 of 101
+Trying Id... 33 of 101
+ÜOriginal: Expense{id=33, amount=3333, date=3333333333, category='Subscription', description='Travel', status=PENDING, employeeId=13}
+ÅUpdated: Expense{id=33, amount=1337, date=1652038923, category='Grocery', description='Utility', status=PENDING, employeeId=13}
+Trying Id... 78 of 101
+Trying Id... 93 of 101
+ÜOriginal: Expense{id=93, amount=3633, date=1650496425, category='Retirement', description='Childcare', status=PENDING, employeeId=9}
+{Updated: Expense{id=93, amount=1404, date=1658752663, category='Travel', description='Pet', status=PENDING, employeeId=9}
+Trying Id... 51 of 101
+~Original: Expense{id=51, amount=2617, date=1651644497, category='Travel', description='Debt', status=PENDING, employeeId=90}
+ÜUpdated: Expense{id=51, amount=9970, date=1654685035, category='Clothing', description='Credit Card', status=PENDING, employeeId=90}
+Trying Id... 30 of 101
+ãOriginal: Expense{id=30, amount=5754, date=1653669152, category='Retirement', description='Entertainment', status=PENDING, employeeId=50}
+ÄUpdated: Expense{id=30, amount=4715, date=1656561469, category='Bill', description='Childcare', status=PENDING, employeeId=50}
+Trying Id... 53 of 101
+Trying Id... 72 of 101
+Trying Id... 36 of 101
+Trying Id... 96 of 101
+Trying Id... 70 of 101
+Trying Id... 1 of 101
+Trying Id... 6 of 101
+ÖOriginal: Expense{id=6, amount=1302, date=1650833303, category='Personal', description='Retirement', status=PENDING, employeeId=77}
+}Updated: Expense{id=6, amount=693, date=1652873190, category='Personal', description='Debt', status=PENDING, employeeId=77}
+Trying Id... 54 of 101
+Trying Id... 54 of 101
+Trying Id... 46 of 101
+Trying Id... 71 of 101
+Trying Id... 1 of 101
+Trying Id... 20 of 101
+ÜOriginal: Expense{id=20, amount=6871, date=1650166996, category='Transportation', description='Food', status=PENDING, employeeId=90}
+ÇUpdated: Expense{id=20, amount=7015, date=1651631548, category='Personal', description='Grocery', status=PENDING, employeeId=90}
+Trying Id... 91 of 101
+Trying Id... 44 of 101
+ÄOriginal: Expense{id=44, amount=9902, date=1659505859, category='Rent', description='Clothing', status=PENDING, employeeId=23}
+áUpdated: Expense{id=44, amount=2106, date=1654317125, category='Utility', description='Entertainment', status=PENDING, employeeId=23}
+Trying Id... 37 of 101
+Trying Id... 12 of 101
+Trying Id... 15 of 101
+Trying Id... 80 of 101
+Trying Id... 15 of 101
+Trying Id... 100 of 101
+Trying Id... 62 of 101
+àOriginal: Expense{id=62, amount=6520, date=1654941816, category='Subscription', description='Clothing', status=PENDING, employeeId=70}
+ÑUpdated: Expense{id=62, amount=8731, date=1653145745, category='School', description='Credit Card', status=PENDING, employeeId=70}
+Trying Id... 91 of 101
+Trying Id... 38 of 101
+Trying Id... 92 of 101
+Trying Id... 9 of 101
+ÇOriginal: Expense{id=9, amount=803, date=1654256660, category='Grocery', description='Childcare', status=PENDING, employeeId=31}
+yUpdated: Expense{id=9, amount=650, date=1658105345, category='Loan', description='Loan', status=PENDING, employeeId=31}
+Trying Id... 97 of 101
+Trying Id... 70 of 101
+Trying Id... 45 of 101
+Trying Id... 22 of 101
+{Original: Expense{id=22, amount=4303, date=1653002082, category='Pet', description='Rent', status=PENDING, employeeId=48}
+{Updated: Expense{id=22, amount=787, date=1654282593, category='Car', description='School', status=PENDING, employeeId=48}
+Trying Id... 25 of 101
+ÄOriginal: Expense{id=25, amount=4495, date=1652770248, category='Rent', description='Clothing', status=PENDING, employeeId=61}
+ÜUpdated: Expense{id=25, amount=6792, date=1657310358, category='Insurance', description='Cell Phone', status=PENDING, employeeId=61}
+Trying Id... 32 of 101
+ÉOriginal: Expense{id=32, amount=2673, date=1651759746, category='Credit Card', description='Bill', status=PENDING, employeeId=20}
+áUpdated: Expense{id=32, amount=4135, date=1652758959, category='Emergency', description='Credit Card', status=PENDING, employeeId=20}
+Trying Id... 89 of 101
+Trying Id... 23 of 101
+Trying Id... 81 of 101
+ÅOriginal: Expense{id=81, amount=2433, date=1650531806, category='Emergency', description='Bill', status=PENDING, employeeId=78}
+ÇUpdated: Expense{id=81, amount=7287, date=1657037528, category='Grocery', description='Personal', status=PENDING, employeeId=78}
+Trying Id... 80 of 101
+Trying Id... 89 of 101
+Trying Id... 89 of 101
+Trying Id... 57 of 101
+Original: Expense{id=57, amount=7250, date=1650470745, category='Rent', description='Utility', status=PENDING, employeeId=96}
+ÉUpdated: Expense{id=57, amount=1980, date=1657517997, category='Retirement', description='Upkeep', status=PENDING, employeeId=96}
+Trying Id... 9 of 101
+zOriginal: Expense{id=9, amount=650, date=1658105345, category='Loan', description='Loan', status=PENDING, employeeId=31}
+ÖUpdated: Expense{id=9, amount=7623, date=1656430337, category='Utility', description='Subscription', status=PENDING, employeeId=31}
+Trying Id... 33 of 101
+ÇOriginal: Expense{id=33, amount=1337, date=1652038923, category='Grocery', description='Utility', status=PENDING, employeeId=13}
+äUpdated: Expense{id=33, amount=1941, date=1656316394, category='Entertainment', description='Cell Phone', status=PENDING, employeeId=13}
+Trying Id... 33 of 101
+ãOriginal: Expense{id=33, amount=1941, date=1656316394, category='Entertainment', description='Cell Phone', status=PENDING, employeeId=13}
+ÖUpdated: Expense{id=33, amount=1835, date=1653544439, category='Emergency', description='Childcare', status=PENDING, employeeId=13}
+Trying Id... 12 of 101
+Trying Id... 22 of 101
+|Original: Expense{id=22, amount=787, date=1654282593, category='Car', description='School', status=PENDING, employeeId=48}
+ÉUpdated: Expense{id=22, amount=9241, date=1651098366, category='Grocery', description='Emergency', status=PENDING, employeeId=48}
+Trying Id... 44 of 101
+àOriginal: Expense{id=44, amount=2106, date=1654317125, category='Utility', description='Entertainment', status=PENDING, employeeId=23}
+}Updated: Expense{id=44, amount=2356, date=1658122401, category='Bill', description='Travel', status=PENDING, employeeId=23}
+Trying Id... 46 of 101
+Trying Id... 70 of 101
+Trying Id... 6 of 101
+~Original: Expense{id=6, amount=693, date=1652873190, category='Personal', description='Debt', status=PENDING, employeeId=77}
+ÜUpdated: Expense{id=6, amount=2483, date=1657664732, category='Transportation', description='Travel', status=PENDING, employeeId=77}
+Trying Id... 15 of 101
+Trying Id... 30 of 101
+ÅOriginal: Expense{id=30, amount=4715, date=1656561469, category='Bill', description='Childcare', status=PENDING, employeeId=50}
+zUpdated: Expense{id=30, amount=7978, date=1659394170, category='Pet', description='Bill', status=PENDING, employeeId=50}
+Trying Id... 49 of 101
+Trying Id... 22 of 101
+ÑOriginal: Expense{id=22, amount=9241, date=1651098366, category='Grocery', description='Emergency', status=PENDING, employeeId=48}
+ÉUpdated: Expense{id=22, amount=4074, date=1655018915, category='Cell Phone', description='School', status=PENDING, employeeId=48}
+Trying Id... 97 of 101
+Trying Id... 53 of 101
+Trying Id... 82 of 101
+ÄOriginal: Expense{id=82, amount=3932, date=1655511360, category='Cell Phone', description='Car', status=PENDING, employeeId=4}
+ÉUpdated: Expense{id=82, amount=4332, date=1651460699, category='Bill', description='Entertainment', status=PENDING, employeeId=4}
+Trying Id... 33 of 101
+ÜOriginal: Expense{id=33, amount=1835, date=1653544439, category='Emergency', description='Childcare', status=PENDING, employeeId=13}
+Updated: Expense{id=33, amount=75, date=1655682188, category='Bill', description='Retirement', status=PENDING, employeeId=13}
+Trying Id... 42 of 101
+ÇOriginal: Expense{id=42, amount=224, date=1659487391, category='Insurance', description='Travel', status=PENDING, employeeId=39}
+ãUpdated: Expense{id=42, amount=9565, date=1656395036, category='Subscription', description='Subscription', status=PENDING, employeeId=39}
+Trying Id... 24 of 101
+Trying Id... 5 of 101
+ÉOriginal: Expense{id=5, amount=650, date=1656670786, category='Bill', description='Transportation', status=PENDING, employeeId=1}
+~Updated: Expense{id=5, amount=5299, date=1657165505, category='Rent', description='Childcare', status=PENDING, employeeId=1}
+Trying Id... 18 of 101
+Trying Id... 68 of 101
+Trying Id... 35 of 101
+Trying Id... 77 of 101
+Trying Id... 21 of 101
+Trying Id... 98 of 101
+Trying Id... 29 of 101
+ÜOriginal: Expense{id=29, amount=4569, date=1650647527, category='Emergency', description='Insurance', status=PENDING, employeeId=14}
+ÇUpdated: Expense{id=29, amount=1451, date=1650967375, category='Childcare', description='Health', status=PENDING, employeeId=14}
+Trying Id... 29 of 101
+ÉOriginal: Expense{id=29, amount=1451, date=1650967375, category='Childcare', description='Health', status=PENDING, employeeId=14}
+}Updated: Expense{id=29, amount=9118, date=1657014875, category='Grocery', description='Pet', status=PENDING, employeeId=14}
+Trying Id... 41 of 101
+Trying Id... 41 of 101
+Trying Id... 14 of 101
+Trying Id... 62 of 101
+ÖOriginal: Expense{id=62, amount=8731, date=1653145745, category='School', description='Credit Card', status=PENDING, employeeId=70}
+Updated: Expense{id=62, amount=9088, date=1651296233, category='Travel', description='School', status=PENDING, employeeId=70}
+Trying Id... 29 of 101
+~Original: Expense{id=29, amount=9118, date=1657014875, category='Grocery', description='Pet', status=PENDING, employeeId=14}
+~Updated: Expense{id=29, amount=483, date=1655698248, category='Upkeep', description='Upkeep', status=PENDING, employeeId=14}
+Trying Id... 63 of 101
+åOriginal: Expense{id=63, amount=1488, date=1650785523, category='Retirement', description='Transportation', status=PENDING, employeeId=36}
+ÑUpdated: Expense{id=63, amount=1915, date=1655714377, category='Grocery', description='Retirement', status=PENDING, employeeId=36}
+Trying Id... 21 of 101
+Trying Id... 44 of 101
+~Original: Expense{id=44, amount=2356, date=1658122401, category='Bill', description='Travel', status=PENDING, employeeId=23}
+ÅUpdated: Expense{id=44, amount=9529, date=1651688805, category='Health', description='Clothing', status=PENDING, employeeId=23}
+Trying Id... 62 of 101
+ÄOriginal: Expense{id=62, amount=9088, date=1651296233, category='Travel', description='School', status=PENDING, employeeId=70}
+ÑUpdated: Expense{id=62, amount=7912, date=1657171830, category='Clothing', description='Insurance', status=PENDING, employeeId=70}
+Trying Id... 97 of 101
+Trying Id... 13 of 101
+Trying Id... 38 of 101
+Trying Id... 72 of 101
+Trying Id... 85 of 101
+Trying Id... 43 of 101
+ÇOriginal: Expense{id=43, amount=1242, date=1658706989, category='Debt', description='Credit Card', status=PENDING, employeeId=5}
+Updated: Expense{id=43, amount=7127, date=1650366671, category='Utility', description='Upkeep', status=PENDING, employeeId=5}
+Trying Id... 16 of 101
+Trying Id... 7 of 101
+Trying Id... 43 of 101
+ÄOriginal: Expense{id=43, amount=7127, date=1650366671, category='Utility', description='Upkeep', status=PENDING, employeeId=5}
+ÄUpdated: Expense{id=43, amount=4747, date=1651366703, category='Clothing', description='Upkeep', status=PENDING, employeeId=5}
+Trying Id... 35 of 101
+Trying Id... 64 of 101
+Trying Id... 51 of 101
+áOriginal: Expense{id=51, amount=9970, date=1654685035, category='Clothing', description='Credit Card', status=PENDING, employeeId=90}
+ÖUpdated: Expense{id=51, amount=6797, date=1658820789, category='Emergency', description='Insurance', status=PENDING, employeeId=90}
+Trying Id... 56 of 101
+Trying Id... 28 of 101
+ÇOriginal: Expense{id=28, amount=6776, date=1659766220, category='Personal', description='Grocery', status=PENDING, employeeId=9}
+Updated: Expense{id=28, amount=578, date=1652387784, category='Retirement', description='Loan', status=PENDING, employeeId=9}
+Trying Id... 65 of 101
+Trying Id... 82 of 101
+ÑOriginal: Expense{id=82, amount=4332, date=1651460699, category='Bill', description='Entertainment', status=PENDING, employeeId=4}
+ÜUpdated: Expense{id=82, amount=7619, date=1654374263, category='Cell Phone', description='Retirement', status=PENDING, employeeId=4}
+Trying Id... 67 of 101
+Trying Id... 67 of 101
+Trying Id... 83 of 101
+Trying Id... 14 of 101
+Trying Id... 4 of 101
+Trying Id... 30 of 101
+{Original: Expense{id=30, amount=7978, date=1659394170, category='Pet', description='Bill', status=PENDING, employeeId=50}
+ÅUpdated: Expense{id=30, amount=9472, date=1655082885, category='Clothing', description='School', status=PENDING, employeeId=50}
+Trying Id... 71 of 101
+Trying Id... 90 of 101
+ÉOriginal: Expense{id=90, amount=9823, date=1659635509, category='Emergency', description='Health', status=PENDING, employeeId=14}
+ÉUpdated: Expense{id=90, amount=8507, date=1650194007, category='Subscription', description='Bill', status=PENDING, employeeId=14}
+Trying Id... 45 of 101
+Trying Id... 67 of 101
+Trying Id... 29 of 101
+Original: Expense{id=29, amount=483, date=1655698248, category='Upkeep', description='Upkeep', status=PENDING, employeeId=14}
+ÑUpdated: Expense{id=29, amount=175, date=1653846471, category='Subscription', description='Health', status=PENDING, employeeId=14}
+Trying Id... 63 of 101
+ÖOriginal: Expense{id=63, amount=1915, date=1655714377, category='Grocery', description='Retirement', status=PENDING, employeeId=36}
+ÅUpdated: Expense{id=63, amount=3069, date=1658483546, category='Upkeep', description='Personal', status=PENDING, employeeId=36}
+Trying Id... 31 of 101
+ÇOriginal: Expense{id=31, amount=2383, date=1652549180, category='Cell Phone', description='Food', status=PENDING, employeeId=69}
+ÇUpdated: Expense{id=31, amount=3096, date=1651576253, category='School', description='Insurance', status=PENDING, employeeId=69}
+Trying Id... 17 of 101
+Trying Id... 58 of 101
+|Original: Expense{id=58, amount=126, date=1652162646, category='Health', description='Pet', status=PENDING, employeeId=35}
+ÇUpdated: Expense{id=58, amount=8138, date=1651592464, category='Insurance', description='Travel', status=PENDING, employeeId=35}
+Trying Id... 77 of 101
+Trying Id... 96 of 101
+Trying Id... 18 of 101
+Trying Id... 25 of 101
+áOriginal: Expense{id=25, amount=6792, date=1657310358, category='Insurance', description='Cell Phone', status=PENDING, employeeId=61}
+}Updated: Expense{id=25, amount=7074, date=1658101010, category='Travel', description='Rent', status=PENDING, employeeId=61}
+Trying Id... 26 of 101
+Trying Id... 20 of 101
+ÉOriginal: Expense{id=20, amount=7015, date=1651631548, category='Personal', description='Grocery', status=PENDING, employeeId=90}
+}Updated: Expense{id=20, amount=4478, date=1655815360, category='Food', description='Health', status=PENDING, employeeId=90}
+Trying Id... 86 of 101
+áOriginal: Expense{id=86, amount=902, date=1655611120, category='Childcare', description='Credit Card', status=PENDING, employeeId=16}
+ÉUpdated: Expense{id=86, amount=6128, date=1654612107, category='School', description='Cell Phone', status=PENDING, employeeId=16}
+Trying Id... 5 of 101
+Original: Expense{id=5, amount=5299, date=1657165505, category='Rent', description='Childcare', status=PENDING, employeeId=1}
+Updated: Expense{id=5, amount=6016, date=1654064808, category='Cell Phone', description='Food', status=PENDING, employeeId=1}
+Trying Id... 73 of 101
+Trying Id... 25 of 101
+~Original: Expense{id=25, amount=7074, date=1658101010, category='Travel', description='Rent', status=PENDING, employeeId=61}
+çUpdated: Expense{id=25, amount=892, date=1657046266, category='Transportation', description='Entertainment', status=PENDING, employeeId=61}
+Trying Id... 99 of 101
+Trying Id... 41 of 101
+Trying Id... 11 of 101
+áOriginal: Expense{id=11, amount=8601, date=1659996229, category='Entertainment', description='School', status=PENDING, employeeId=20}
+ÄUpdated: Expense{id=11, amount=3502, date=1650732634, category='Childcare', description='Loan', status=PENDING, employeeId=20}
+Trying Id... 38 of 101
+Trying Id... 9 of 101
+ÜOriginal: Expense{id=9, amount=7623, date=1656430337, category='Utility', description='Subscription', status=PENDING, employeeId=31}
+ÅUpdated: Expense{id=9, amount=8546, date=1650283944, category='Travel', description='Insurance', status=PENDING, employeeId=31}
+Trying Id... 85 of 101
+Trying Id... 8 of 101
+ÄOriginal: Expense{id=8, amount=2070, date=1658144403, category='Car', description='Childcare', status=PENDING, employeeId=100}
+ÉUpdated: Expense{id=8, amount=7527, date=1653286801, category='Subscription', description='Rent', status=PENDING, employeeId=100}
+Trying Id... 7 of 101
+Trying Id... 75 of 101
+Trying Id... 50 of 101
+Trying Id... 26 of 101
+Trying Id... 56 of 101
+Trying Id... 88 of 101
+Trying Id... 51 of 101
+ÜOriginal: Expense{id=51, amount=6797, date=1658820789, category='Emergency', description='Insurance', status=PENDING, employeeId=90}
+ÇUpdated: Expense{id=51, amount=6684, date=1656870989, category='Loan', description='Credit Card', status=PENDING, employeeId=90}
+Trying Id... 11 of 101
+ÅOriginal: Expense{id=11, amount=3502, date=1650732634, category='Childcare', description='Loan', status=PENDING, employeeId=20}
+ÄUpdated: Expense{id=11, amount=2427, date=1655383923, category='Loan', description='Insurance', status=PENDING, employeeId=20}
+Trying Id... 26 of 101
+Trying Id... 56 of 101
+Trying Id... 27 of 101
+Trying Id... 40 of 101
+Trying Id... 11 of 101
+ÅOriginal: Expense{id=11, amount=2427, date=1655383923, category='Loan', description='Insurance', status=PENDING, employeeId=20}
+ÉUpdated: Expense{id=11, amount=791, date=1651919220, category='Entertainment', description='Bill', status=PENDING, employeeId=20}
+Trying Id... 12 of 101
+Trying Id... 38 of 101
+Trying Id... 72 of 101
+Trying Id... 62 of 101
+ÖOriginal: Expense{id=62, amount=7912, date=1657171830, category='Clothing', description='Insurance', status=PENDING, employeeId=70}
+ÄUpdated: Expense{id=62, amount=7570, date=1657555351, category='Food', description='Childcare', status=PENDING, employeeId=70}
+Trying Id... 8 of 101
+ÑOriginal: Expense{id=8, amount=7527, date=1653286801, category='Subscription', description='Rent', status=PENDING, employeeId=100}
+ÑUpdated: Expense{id=8, amount=7667, date=1657172154, category='Loan', description='Entertainment', status=PENDING, employeeId=100}
+Trying Id... 61 of 101
+Trying Id... 85 of 101
+Trying Id... 85 of 101
+Trying Id... 41 of 101
+Trying Id... 69 of 101
+Trying Id... 85 of 101
+Trying Id... 14 of 101
+Trying Id... 87 of 101
+Trying Id... 70 of 101
+Trying Id... 88 of 101
+Trying Id... 99 of 101
+Trying Id... 8 of 101
+ÖOriginal: Expense{id=8, amount=7667, date=1657172154, category='Loan', description='Entertainment', status=PENDING, employeeId=100}
+âUpdated: Expense{id=8, amount=9590, date=1659733676, category='Transportation', description='Clothing', status=PENDING, employeeId=100}
+Trying Id... 51 of 101
+ÉOriginal: Expense{id=51, amount=6684, date=1656870989, category='Loan', description='Credit Card', status=PENDING, employeeId=90}
+ÜUpdated: Expense{id=51, amount=7574, date=1659602247, category='Grocery', description='Subscription', status=PENDING, employeeId=90}
+Trying Id... 51 of 101
+áOriginal: Expense{id=51, amount=7574, date=1659602247, category='Grocery', description='Subscription', status=PENDING, employeeId=90}
+ÅUpdated: Expense{id=51, amount=1505, date=1658031380, category='Retirement', description='Loan', status=PENDING, employeeId=90}
+Trying Id... 4 of 101
+Trying Id... 5 of 101
+ÄOriginal: Expense{id=5, amount=6016, date=1654064808, category='Cell Phone', description='Food', status=PENDING, employeeId=1}
+ÄUpdated: Expense{id=5, amount=5659, date=1656424730, category='Utility', description='Clothing', status=PENDING, employeeId=1}
+Trying Id... 26 of 101
+Trying Id... 73 of 101
+Trying Id... 43 of 101
+ÅOriginal: Expense{id=43, amount=4747, date=1651366703, category='Clothing', description='Upkeep', status=PENDING, employeeId=5}
+}Updated: Expense{id=43, amount=7883, date=1659486293, category='Bill', description='Utility', status=PENDING, employeeId=5}
+Trying Id... 12 of 101
+Trying Id... 38 of 101
+Trying Id... 55 of 101
+Trying Id... 23 of 101
+Trying Id... 32 of 101
+àOriginal: Expense{id=32, amount=4135, date=1652758959, category='Emergency', description='Credit Card', status=PENDING, employeeId=20}
+|Updated: Expense{id=32, amount=2831, date=1653767371, category='Pet', description='Upkeep', status=PENDING, employeeId=20}
+Trying Id... 91 of 101
+Trying Id... 44 of 101
+ÇOriginal: Expense{id=44, amount=9529, date=1651688805, category='Health', description='Clothing', status=PENDING, employeeId=23}
+ÇUpdated: Expense{id=44, amount=857, date=1651465907, category='Entertainment', description='Pet', status=PENDING, employeeId=23}
+Trying Id... 50 of 101
+Trying Id... 73 of 101
+Trying Id... 43 of 101
+~Original: Expense{id=43, amount=7883, date=1659486293, category='Bill', description='Utility', status=PENDING, employeeId=5}
+|Updated: Expense{id=43, amount=4917, date=1656165984, category='Car', description='Grocery', status=PENDING, employeeId=5}
+Trying Id... 23 of 101
+Trying Id... 41 of 101
+Trying Id... 52 of 101
+ÄOriginal: Expense{id=52, amount=9773, date=1654549423, category='Bill', description='Personal', status=PENDING, employeeId=76}
+ÖUpdated: Expense{id=52, amount=9222, date=1654155647, category='Emergency', description='Insurance', status=PENDING, employeeId=76}
+Trying Id... 0 of 101
+Trying Id... 10 of 101
+~Original: Expense{id=10, amount=1254, date=1656284917, category='Health', description='Bill', status=PENDING, employeeId=33}
+}Updated: Expense{id=10, amount=3326, date=1655321927, category='Debt', description='Travel', status=PENDING, employeeId=33}
+Trying Id... 39 of 101
+Trying Id... 19 of 101
+Trying Id... 13 of 101
+Trying Id... 69 of 101
+Trying Id... 70 of 101
+Trying Id... 74 of 101
+Trying Id... 61 of 101
+Trying Id... 12 of 101
+Trying Id... 98 of 101
+Trying Id... 32 of 101
+}Original: Expense{id=32, amount=2831, date=1653767371, category='Pet', description='Upkeep', status=PENDING, employeeId=20}
+zUpdated: Expense{id=32, amount=1367, date=1653528027, category='Pet', description='Debt', status=PENDING, employeeId=20}
+Trying Id... 39 of 101
+Trying Id... 10 of 101
+~Original: Expense{id=10, amount=3326, date=1655321927, category='Debt', description='Travel', status=PENDING, employeeId=33}
+ÄUpdated: Expense{id=10, amount=5447, date=1655148639, category='Insurance', description='Bill', status=PENDING, employeeId=33}
+Trying Id... 8 of 101
+äOriginal: Expense{id=8, amount=9590, date=1659733676, category='Transportation', description='Clothing', status=PENDING, employeeId=100}
+ÇUpdated: Expense{id=8, amount=7113, date=1657583357, category='Subscription', description='Pet', status=PENDING, employeeId=100}
+Trying Id... 77 of 101
+Trying Id... 85 of 101
+Trying Id... 87 of 101
+Trying Id... 25 of 101
+éOriginal: Expense{id=25, amount=892, date=1657046266, category='Transportation', description='Entertainment', status=PENDING, employeeId=61}
+ÑUpdated: Expense{id=25, amount=1393, date=1658906934, category='Retirement', description='Grocery', status=PENDING, employeeId=61}
+Trying Id... 9 of 101
+ÇOriginal: Expense{id=9, amount=8546, date=1650283944, category='Travel', description='Insurance', status=PENDING, employeeId=31}
+|Updated: Expense{id=9, amount=2246, date=1654800170, category='Utility', description='Car', status=PENDING, employeeId=31}
+Trying Id... 66 of 101
+Trying Id... 11 of 101
+ÑOriginal: Expense{id=11, amount=791, date=1651919220, category='Entertainment', description='Bill', status=PENDING, employeeId=20}
+~Updated: Expense{id=11, amount=7882, date=1651464834, category='Grocery', description='Debt', status=PENDING, employeeId=20}
+Trying Id... 51 of 101
+ÇOriginal: Expense{id=51, amount=1505, date=1658031380, category='Retirement', description='Loan', status=PENDING, employeeId=90}
+ÑUpdated: Expense{id=51, amount=1405, date=1657541958, category='Credit Card', description='Health', status=PENDING, employeeId=90}
+Trying Id... 46 of 101
+Trying Id... 60 of 101
+Trying Id... 88 of 101
+Trying Id... 64 of 101
+Trying Id... 41 of 101
+Trying Id... 81 of 101
+ÉOriginal: Expense{id=81, amount=7287, date=1657037528, category='Grocery', description='Personal', status=PENDING, employeeId=78}
+}Updated: Expense{id=81, amount=1392, date=1651907777, category='Bill', description='Travel', status=PENDING, employeeId=78}
+Trying Id... 90 of 101
+ÑOriginal: Expense{id=90, amount=8507, date=1650194007, category='Subscription', description='Bill', status=PENDING, employeeId=14}
+ÉUpdated: Expense{id=90, amount=5732, date=1652883678, category='Food', description='Subscription', status=PENDING, employeeId=14}
+Trying Id... 31 of 101
+ÉOriginal: Expense{id=31, amount=3096, date=1651576253, category='School', description='Insurance', status=PENDING, employeeId=69}
+çUpdated: Expense{id=31, amount=2031, date=1654607164, category='Entertainment', description='Entertainment', status=PENDING, employeeId=69}
+Trying Id... 44 of 101
+ÉOriginal: Expense{id=44, amount=857, date=1651465907, category='Entertainment', description='Pet', status=PENDING, employeeId=23}
+ÜUpdated: Expense{id=44, amount=1176, date=1655398901, category='Insurance', description='Retirement', status=PENDING, employeeId=23}
+Trying Id... 14 of 101
+Trying Id... 54 of 101
+Trying Id... 79 of 101
+Trying Id... 10 of 101
+ÅOriginal: Expense{id=10, amount=5447, date=1655148639, category='Insurance', description='Bill', status=PENDING, employeeId=33}
+ÅUpdated: Expense{id=10, amount=1481, date=1652296716, category='Travel', description='Personal', status=PENDING, employeeId=33}
+Trying Id... 66 of 101
+Trying Id... 32 of 101
+{Original: Expense{id=32, amount=1367, date=1653528027, category='Pet', description='Debt', status=PENDING, employeeId=20}
+ÜUpdated: Expense{id=32, amount=4329, date=1654628366, category='Entertainment', description='Upkeep', status=PENDING, employeeId=20}
+Trying Id... 34 of 101
+Trying Id... 22 of 101
+ÑOriginal: Expense{id=22, amount=4074, date=1655018915, category='Cell Phone', description='School', status=PENDING, employeeId=48}
+{Updated: Expense{id=22, amount=1136, date=1651689820, category='Rent', description='Debt', status=PENDING, employeeId=48}
+Trying Id... 98 of 101
+Trying Id... 73 of 101
+Trying Id... 98 of 101
+Trying Id... 76 of 101
+Trying Id... 33 of 101
+ÄOriginal: Expense{id=33, amount=75, date=1655682188, category='Bill', description='Retirement', status=PENDING, employeeId=13}
+ÉUpdated: Expense{id=33, amount=9660, date=1656966677, category='Health', description='Cell Phone', status=PENDING, employeeId=13}
+Trying Id... 66 of 101
+Trying Id... 80 of 101
+Trying Id... 52 of 101
+ÜOriginal: Expense{id=52, amount=9222, date=1654155647, category='Emergency', description='Insurance', status=PENDING, employeeId=76}
+ÅUpdated: Expense{id=52, amount=5540, date=1655684335, category='Retirement', description='Food', status=PENDING, employeeId=76}
+Trying Id... 27 of 101
+Trying Id... 79 of 101
+Trying Id... 94 of 101
+ÅOriginal: Expense{id=94, amount=3106, date=1651332841, category='Childcare', description='Food', status=PENDING, employeeId=53}
+zUpdated: Expense{id=94, amount=293, date=1658435022, category='Loan', description='Bill', status=PENDING, employeeId=53}
+Trying Id... 54 of 101
+Trying Id... 97 of 101
+Trying Id... 38 of 101
+Trying Id... 87 of 101
+Trying Id... 11 of 101
+Original: Expense{id=11, amount=7882, date=1651464834, category='Grocery', description='Debt', status=PENDING, employeeId=20}
+ÉUpdated: Expense{id=11, amount=6134, date=1653736028, category='Entertainment', description='Car', status=PENDING, employeeId=20}
+Trying Id... 33 of 101
+ÑOriginal: Expense{id=33, amount=9660, date=1656966677, category='Health', description='Cell Phone', status=PENDING, employeeId=13}

@@ -3,6 +3,7 @@ package dev.ledesma.tests.dao;
 import dev.ledesma.dao.ExpenseDAO;
 import dev.ledesma.dao.PostgresExpenseDAO;
 import dev.ledesma.entities.Expense;
+import dev.ledesma.entities.ExpenseStatus;
 import dev.ledesma.utils.ExpenseCreator;
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.*;
@@ -87,7 +88,7 @@ class ExpenseDAOTest {
             id = r.nextInt(101);
             System.out.println("Trying Id... " + id + " of " + 101);
 
-            while (!idSet.contains(id) || expDAO.getExpenseById(id).getStatus() != Expense.expenseStatus.PENDING ) {
+            while (!idSet.contains(id) || expDAO.getExpenseById(id).getStatus() != ExpenseStatus.PENDING ) {
                 id = r.nextInt(101);
                 System.out.println("Trying Id... " + id + " of " + 101);
             }
@@ -102,7 +103,7 @@ class ExpenseDAOTest {
             updated.setDate(time);
             updated.setCategory(expenseCreator.category[r.nextInt(categorySize)]);
             updated.setDescription(expenseCreator.category[r.nextInt(descriptionSize)]);
-            updated.setStatus(Expense.expenseStatus.PENDING);
+            updated.setStatus(ExpenseStatus.PENDING);
             updated.setEmployeeId(expDAO.getExpenseById(id).getEmployeeId());
 
             if (expDAO.updateExpense(updated) != null) {
@@ -126,7 +127,7 @@ class ExpenseDAOTest {
     @Order(4)
     void modifyExpense() {
         int id = 1;
-        Expense.expenseStatus status = Expense.expenseStatus.APPROVED;
+        ExpenseStatus status = ExpenseStatus.APPROVED;
         Expense modifiedExpense = expDAO.modifyExpense(id, status);
 
         if(modifiedExpense != null){
@@ -193,7 +194,7 @@ class ExpenseDAOTest {
     @Test
     @Order(8)
     void getAllExpenseByStatus() {
-        List<Expense> expenses = expDAO.getAllExpenseByStatus(Expense.expenseStatus.APPROVED);
+        List<Expense> expenses = expDAO.getAllExpenseByStatus(ExpenseStatus.APPROVED);
         for(Expense e : expenses){
             System.out.println(e);
         }

@@ -1,6 +1,7 @@
 package dev.ledesma.dao;
 
 import dev.ledesma.entities.Expense;
+import dev.ledesma.entities.ExpenseStatus;
 import dev.ledesma.utils.ConnectionUtility;
 import org.apache.log4j.Logger;
 
@@ -75,9 +76,9 @@ public class PostgresExpenseDAO implements ExpenseDAO{
             ResultSet rs = ps.executeQuery();
             rs.next();
 
-            Expense.expenseStatus status = Expense.expenseStatus.valueOf(
+            ExpenseStatus status = ExpenseStatus.valueOf(
                     rs.getString("status"));
-            if (status.equals(Expense.expenseStatus.PENDING)){
+            if (status.equals(ExpenseStatus.PENDING)){
                 sql = "delete from expense where id = ?";
                 ps = conn.prepareStatement(sql);
                 ps.setInt(1, id);
@@ -117,7 +118,7 @@ public class PostgresExpenseDAO implements ExpenseDAO{
     }
 
     @Override //Fix
-    public Expense modifyExpense(int id, Expense.expenseStatus status) {
+    public Expense modifyExpense(int id, ExpenseStatus status) {
 
         try(Connection conn = ConnectionUtility.createConnection()){
             String sql = "update expense set status = ? where id = ?";
@@ -138,7 +139,7 @@ public class PostgresExpenseDAO implements ExpenseDAO{
             expense.setDate(rs.getLong("date"));
             expense.setCategory(rs.getString("category"));
             expense.setDescription(rs.getString("description"));
-            expense.setStatus(Expense.expenseStatus.valueOf(rs.getString("status")));
+            expense.setStatus(ExpenseStatus.valueOf(rs.getString("status")));
             expense.setEmployeeId(rs.getInt("employee_id"));
 
             return expense;
@@ -166,7 +167,7 @@ public class PostgresExpenseDAO implements ExpenseDAO{
             expense.setDate(rs.getLong("date"));
             expense.setCategory(rs.getString("category"));
             expense.setDescription(rs.getString("description"));
-            expense.setStatus(Expense.expenseStatus.valueOf(rs.getString("status")));
+            expense.setStatus(ExpenseStatus.valueOf(rs.getString("status")));
             expense.setEmployeeId(rs.getInt("employee_id"));
 
             return expense;
@@ -194,7 +195,7 @@ public class PostgresExpenseDAO implements ExpenseDAO{
                 expense.setDate(rs.getLong("date"));
                 expense.setCategory(rs.getString("category"));
                 expense.setDescription(rs.getString("description"));
-                expense.setStatus(Expense.expenseStatus.valueOf(rs.getString("status")));
+                expense.setStatus(ExpenseStatus.valueOf(rs.getString("status")));
                 expense.setEmployeeId(rs.getInt("employee_id"));
                 expenseSet.add(expense);
             }
@@ -225,7 +226,7 @@ public class PostgresExpenseDAO implements ExpenseDAO{
                 expense.setDate(rs.getLong("date"));
                 expense.setCategory(rs.getString("category"));
                 expense.setDescription(rs.getString("description"));
-                expense.setStatus(Expense.expenseStatus.valueOf(rs.getString("status")));
+                expense.setStatus(ExpenseStatus.valueOf(rs.getString("status")));
                 expense.setEmployeeId(rs.getInt("employee_id"));
                 expense.setEmployeeId(rs.getInt("employee_id"));
                 expenseSet.add(expense);
@@ -240,7 +241,7 @@ public class PostgresExpenseDAO implements ExpenseDAO{
     }
 
     @Override
-    public List<Expense> getAllExpenseByStatus(Expense.expenseStatus status) {
+    public List<Expense> getAllExpenseByStatus(ExpenseStatus status) {
         try(Connection conn = ConnectionUtility.createConnection()){
             String sql = "select * from expense where status = ?";
             PreparedStatement ps = conn.prepareStatement(sql);
@@ -256,7 +257,7 @@ public class PostgresExpenseDAO implements ExpenseDAO{
                 expense.setDate(rs.getLong("date"));
                 expense.setCategory(rs.getString("category"));
                 expense.setDescription(rs.getString("description"));
-                expense.setStatus(Expense.expenseStatus.valueOf(rs.getString("status")));
+                expense.setStatus(ExpenseStatus.valueOf(rs.getString("status")));
                 expense.setEmployeeId(rs.getInt("employee_id"));
                 expense.setEmployeeId(rs.getInt("employee_id"));
                 expenseSet.add(expense);

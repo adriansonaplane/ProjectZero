@@ -9,17 +9,12 @@ public class Expense {
     private long date;
     private String category;
     private String description;
-    private expenseStatus status;
+    private ExpenseStatus status;
     private int employeeId;
-    public enum expenseStatus{
-        PENDING,
-        APPROVED,
-        DENIED;
-    }
 
     public Expense(){}
 
-    public Expense(int id, int amount, long date, String category, String description, expenseStatus status, int employeeId) {
+    public Expense(int id, int amount, long date, String category, String description, ExpenseStatus status, int employeeId) {
         this.id = id;
         this.amount = amount;
         this.date = date;
@@ -69,11 +64,11 @@ public class Expense {
         this.description = description;
     }
 
-    public expenseStatus getStatus() {
+    public ExpenseStatus getStatus() {
         return status;
     }
 
-    public void setStatus(expenseStatus status) {
+    public void setStatus(ExpenseStatus status) {
         this.status = status;
     }
 

@@ -4,6 +4,7 @@ import dev.ledesma.dao.ExpenseDAO;
 import dev.ledesma.dao.PostgresExpenseDAO;
 import dev.ledesma.entities.Employee;
 import dev.ledesma.entities.Expense;
+import dev.ledesma.entities.ExpenseStatus;
 
 import java.time.Instant;
 import java.util.*;
@@ -23,11 +24,11 @@ public class ExpenseCreator {
         PENDING,
         APPROVED,
         DENIED;
-        private static final List<Expense.expenseStatus> VALUES =
-                Collections.unmodifiableList(Arrays.asList(Expense.expenseStatus.values()));
+        private static final List<ExpenseStatus> VALUES =
+                Collections.unmodifiableList(Arrays.asList(ExpenseStatus.values()));
         private static final int SIZE = VALUES.size();
 
-        public static Expense.expenseStatus randomStatus(){
+        public static ExpenseStatus randomStatus(){
             return VALUES.get(r.nextInt(SIZE));
         }
     }

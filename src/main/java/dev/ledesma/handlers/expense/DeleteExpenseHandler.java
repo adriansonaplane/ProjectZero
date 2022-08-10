@@ -2,6 +2,7 @@ package dev.ledesma.handlers.expense;
 
 import dev.ledesma.app.App;
 import dev.ledesma.entities.Expense;
+import dev.ledesma.entities.ExpenseStatus;
 import io.javalin.http.Context;
 import io.javalin.http.Handler;
 import org.jetbrains.annotations.NotNull;
@@ -17,10 +18,10 @@ public class DeleteExpenseHandler implements Handler {
         if (result){
             ctx.status(204);
             ctx.result("Expense Deleted!");
-        }else if (expense.getStatus() == Expense.expenseStatus.APPROVED){
+        }else if (expense.getStatus() == ExpenseStatus.APPROVED){
             ctx.status(422);
             ctx.result("Could Not Delete Approved Expense!");
-        }else if (expense.getStatus() == Expense.expenseStatus.DENIED) {
+        }else if (expense.getStatus() == ExpenseStatus.DENIED) {
             ctx.status(422);
             ctx.result("Could Not Delete Denied Expense!");
         }else if (!result && expense == null){
