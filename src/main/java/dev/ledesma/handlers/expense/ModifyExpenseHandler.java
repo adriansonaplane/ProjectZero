@@ -15,7 +15,7 @@ public class ModifyExpenseHandler implements Handler {
         String status = ctx.pathParam("status").toUpperCase();
         Expense updatedExp = App.expenseService.modifyExpense(id, ExpenseStatus.valueOf(status));
 
-        if(status == "PENDING"){
+        if(status != "PENDING"){
             Gson gson = new Gson();
             String json = gson.toJson(updatedExp);
             ctx.status(201);

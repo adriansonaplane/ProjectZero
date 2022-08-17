@@ -11,8 +11,10 @@ public class UpdateEmployeeHandler implements Handler {
     @Override
     public void handle(@NotNull Context ctx) throws Exception {
 
+        //ctx path param
         String empJson = ctx.body();
         Gson gson = new Gson();
+        //employee setid pathparam
         Employee employee = gson.fromJson(empJson, Employee.class);
         Employee updatedEmp = App.employeeService.updateEmployee(employee);
 

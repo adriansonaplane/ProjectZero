@@ -22,7 +22,7 @@ public class PostgresExpenseDAO implements ExpenseDAO{
             ps.setLong(2, expense.getDate());
             ps.setString(3, expense.getCategory());
             ps.setString(4, expense.getDescription());
-            ps.setString(5, expense.getStatus().toString());
+            ps.setString(5, "PENDING");
             ps.setInt( 6, expense.getEmployeeId());
             ps.execute();
 

@@ -24,25 +24,25 @@ public class RetrieveAllExpenseHandler implements Handler {
             expenseSet = App.expenseService.getAllExpenses();
             Gson gson = new Gson();
             String json = gson.toJson(expenseSet);
-            ctx.status(202);
+            ctx.status(201);
             ctx.result(json);
         } else if (ctx.queryParam("status").toUpperCase().equals("APPROVED")) {
             expenseSet = App.expenseService.getAllEmployeeExpenseByStatus(ExpenseStatus.APPROVED);
             Gson gson = new Gson();
             String json = gson.toJson(expenseSet);
-            ctx.status(202);
+            ctx.status(201);
             ctx.result(json);
         } else if (ctx.queryParam("status").toUpperCase().equals("DENIED")) {
             expenseSet = App.expenseService.getAllEmployeeExpenseByStatus(ExpenseStatus.DENIED);
             Gson gson = new Gson();
             String json = gson.toJson(expenseSet);
-            ctx.status(202);
+            ctx.status(201);
             ctx.result(json);
         } else if (ctx.queryParam("status").toUpperCase().equals("PENDING")) {
             expenseSet = App.expenseService.getAllEmployeeExpenseByStatus(ExpenseStatus.PENDING);
             Gson gson = new Gson();
             String json = gson.toJson(expenseSet);
-            ctx.status(202);
+            ctx.status(201);
             ctx.result(json);
         }else{
             ctx.status(404);

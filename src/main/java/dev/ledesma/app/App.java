@@ -61,9 +61,9 @@ public class App {
         //PUT /expenses/15
         app.put("/expense/{id}", updateExpenseHandler);
         //PATCH /expenses/20/approve
-        app.patch("/expense/{id}/APPROVED", modifyExpenseHandler);
+        //app.patch("/expense/{id}/{status}", modifyExpenseHandler);
         //PATCH /expenses/20/deny
-        app.patch("/expense/{id}/DENIED", modifyExpenseHandler);
+        app.patch("/expense/{id}/{status}", modifyExpenseHandler);
         //DELETE /expenses/19
         app.delete("/expense/{id}", deleteExpenseHandler);
         //Nested
@@ -74,8 +74,8 @@ public class App {
 
         EmployeeCreator employeeCreator = new EmployeeCreator();
         ExpenseCreator expenseCreator = new ExpenseCreator();
-       // employeeCreator.createEmployeeTable();
-        //expenseCreator.createExpenseTable();
+//        employeeCreator.createEmployeeTable();
+//        expenseCreator.createExpenseTable();
 
 
         app.start();

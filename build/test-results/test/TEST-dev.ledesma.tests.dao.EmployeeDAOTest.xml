@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.ledesma.tests.dao.EmployeeDAOTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-10T16:12:50" hostname="GREYBOX" time="1.863">
+  <properties/>
+  <testcase name="getEmployeeById()" classname="dev.ledesma.tests.dao.EmployeeDAOTest" time="1.863"/>
+  <system-out><![CDATA[Trying Id... 74 of 100
+Retrieved Employee: Employee{id=74, firstName='Timothy', lastName='Morris', title='Executive Assistants'}
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

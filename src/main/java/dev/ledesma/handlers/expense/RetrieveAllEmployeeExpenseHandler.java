@@ -26,7 +26,7 @@ public class RetrieveAllEmployeeExpenseHandler implements Handler {
         } else{
             Gson gson = new Gson();
             String json = gson.toJson(empExpenseSet);
-            ctx.status(202);
+            ctx.status(201);
             ctx.result(json);
         }
 
